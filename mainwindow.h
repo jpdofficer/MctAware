@@ -16,6 +16,8 @@
 #include<QNetworkInterface>
 #include<QTableWidget>
 #include<QProcess>
+#include<QDialogButtonBox>
+
 
 
 QT_BEGIN_NAMESPACE
@@ -28,8 +30,10 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    void showNetworkInterfaces();
+    QString showNetworkInterfaces();
     bool isVirtualInterface(const QNetworkInterface& interface);
+    std::string getInterface();
+    void setNetworkInterface(QString netInterface );
 
     ~MainWindow();
 

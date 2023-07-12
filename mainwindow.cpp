@@ -94,7 +94,7 @@ void MainWindow::on_Network_Button_clicked()
 }
 
 
-void MainWindow::showNetworkInterfaces()
+QString MainWindow::showNetworkInterfaces()
 {
     // Create a QTableWidget and set the column count and headers
     QTableWidget* tableWidget = new QTableWidget;
@@ -169,16 +169,46 @@ void MainWindow::showNetworkInterfaces()
     // Resize the columns to fit the content
     tableWidget->resizeColumnsToContents();
 
+
+
     // Create a dialog to display the table
     QDialog dialog;
+    dialog.resize(450,200);
     QVBoxLayout* layout = new QVBoxLayout;
     layout->addWidget(tableWidget);
     dialog.setLayout(layout);
     dialog.setWindowTitle("Network Interfaces");
-    dialog.exec();
+
+    // Add a selection button
+    QDialogButtonBox* buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    layout->addWidget(buttonBox);
+
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
+
+    // Execute the dialog
+    if (dialog.exec() == QDialog::Accepted) {
+        QModelIndexList selectedIndexes = tableWidget->selectionModel()->selectedIndexes();
+        if (!selectedIndexes.isEmpty()) {
+            int selectedRow = selectedIndexes.first().row();
+            const QNetworkInterface& selectedInterface = interfaceVector[selectedRow];
+            QString selectedName = selectedInterface.name();
+            setNetworkInterface(selectedName);
+            return selectedName;
+        }
+    }
 
     // Clean up
     delete tableWidget;
+
+    // Return an empty QString if no interface was selected
+    return QString();
+}
+
+
+void MainWindow::setNetworkInterface(QString netInterface )
+{
+    networkInterface = netInterface;
 }
 
 // Function to check if the interface is virtual
