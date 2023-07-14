@@ -32,7 +32,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     QString showNetworkInterfaces();
     bool isVirtualInterface(const QNetworkInterface& interface);
-    std::string getInterface();
+    std::string getNetworkInterface();
     void setNetworkInterface(QString netInterface );
 
     ~MainWindow();
@@ -45,6 +45,8 @@ private slots:
     void on_Network_Button_clicked();
 
     void on_Router_IPEdit_textChanged(const QString &arg1);
+
+    void on_Cancel_Button_clicked();
 
 private:
     Ui::MainWindow *ui;

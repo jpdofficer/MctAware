@@ -23,6 +23,7 @@ void MctData::setRouterCSV(const QString Router)
 void MctData::setNetwork(const QString NetworkInterface)
 {
     networkInterface = NetworkInterface.toStdString(); // Changes the QString to a standard Library String
+    std::cout << networkInterface << "\n";
 }
 void MctData::setDataCSV(const QString DataCSV)
 {
@@ -39,6 +40,7 @@ std::string MctData::getRouterCSV()
 std::string MctData::getNetwork()
 {
     return networkInterface;
+
 }
 std::string MctData::getDataCSV()
 {
@@ -48,6 +50,7 @@ std::string MctData::getDataCSV()
 std::string MctData::getIpAddress()
 {
     return ipAddress;
+    std::cout << networkInterface << "\n";
 }
 
 MctData::~MctData()

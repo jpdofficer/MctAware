@@ -12,6 +12,7 @@ CONFIG += c++17
 
 SOURCES += \
     MctData.cpp \
+    MctVehicleData.cpp \
     cradlepointrouter.cpp \
     main.cpp \
     mainwindow.cpp
@@ -19,6 +20,7 @@ SOURCES += \
 HEADERS += \
     CradlePointRouters.h \
     MctData.h \
+    MctVehicleData.h \
     cradlepointrouter.h \
     mainwindow.h
 

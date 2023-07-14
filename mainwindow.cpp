@@ -208,7 +208,13 @@ QString MainWindow::showNetworkInterfaces()
 
 void MainWindow::setNetworkInterface(QString netInterface )
 {
-    networkInterface = netInterface;
+    myData.setNetwork(netInterface);
+
+}
+
+std::string MainWindow::getNetworkInterface()
+{
+    return networkInterface.toStdString(); //return the network interface as a Standard String
 }
 
 // Function to check if the interface is virtual
@@ -249,4 +255,10 @@ bool MainWindow::isVirtualInterface(const QNetworkInterface& interface)
 }
 
 
+
+
+void MainWindow::on_Cancel_Button_clicked()
+{
+    QApplication::exit();
+}
 
