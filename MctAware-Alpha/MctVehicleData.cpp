@@ -7,6 +7,9 @@ MctVehicleData::MctVehicleData()
 }
 
 
+
+
+
 /*Create a timestamp */
 void MctVehicleData::autoTimeStamp()
 {

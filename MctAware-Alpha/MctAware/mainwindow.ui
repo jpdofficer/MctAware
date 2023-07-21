@@ -175,6 +175,8 @@
     <property name="title">
      <string>&amp;File</string>
     </property>
+    <addaction name="actionView_Routers"/>
+    <addaction name="actionView_Associations"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>

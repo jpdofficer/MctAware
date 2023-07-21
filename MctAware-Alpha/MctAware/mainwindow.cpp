@@ -1,42 +1,39 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-
-
+    /*mainLayout = new QGridLayout(); // create a GridLayout
+    QWidget *centralWidget = new QWidget(); //create a widget
+    centralWidget ->setLayout(mainLayout); //from the centralWidget set the layout to mainLayout
+    setCentralWidget(centralWidget); //set the main window to centralwidget
+    setWindowTitle("MctVehicle");
+    setFixedSize(360,200);*/
 
     QFile file("mainwindow.ui");
     file.open(QFile::ReadOnly);
 
-    QAction* actionView_Routers = new QAction("View Routers", this);
-    connect(actionView_Routers, &QAction::triggered, this, &MainWindow::on_View_Routers);
 
 
-    // Add the "View Routers" action to the File menu
-    ui->menuFile->addAction(actionView_Routers);
+
+
+
+
+
 
 
 }
 
 
-void MainWindow::on_View_Routers()
-{
 
-    // Open the file dialog to select the router CSV file
-    QString routerCSVPath = "/home/jyeager/Downloads/routers.csv";
-        //QFileDialog::getOpenFileName(this, "Open Router CSV", QString(), "CSV Files (*.csv)");
-    if (!routerCSVPath.isEmpty())
-    {
-        // Create and show the RoutersVehiclesDialog with the selected router CSV file
-        RoutersVehiclesDialog dialog(routerCSVPath, QString(), this);
-        dialog.exec();
-    }
+
+MainWindow::~MainWindow()
+{
+    delete ui;
 }
 
 
@@ -45,15 +42,13 @@ void MainWindow::on_Router_IPEdit_textChanged(const QString &ip)
 
 
 
-    if(!ip.isEmpty())
-    {
-        ipaddress = ip;
-        mctData.setRouterIP(ipaddress.toStdString());
-    }
+        if(!ip.isEmpty())
+        {
+            ipaddress = ip;
+            myData.setIpAddress(ipaddress);
+        }
 
 }
-
-
 
 void MainWindow::on_Router_Button_clicked()
 {
@@ -67,13 +62,36 @@ void MainWindow::on_Router_Button_clicked()
     //fileDialog = nullptr;
 }
 
+
+void MainWindow::on_Association_Button_clicked()
+{
+    QString filePath = fileDialog->getOpenFileName();
+    if(!filePath.isEmpty())
+    {
+        associationCSV = filePath;
+
+
+    }
+    //fileDialog = nullptr;
+}
+
+
+void MainWindow::on_Submit_Button_clicked()
+{
+
+    myData.setRouterCSV(routerCSV);
+    myData.setDataCSV(associationCSV);
+
+    QApplication::quit();
+}
+
+
 void MainWindow::on_Network_Button_clicked()
 {
 
     interfaceVector = QVector<QNetworkInterface>::fromList(QNetworkInterface::allInterfaces()); // get all interfaces and store them in interface vector
     showNetworkInterfaces();
 }
-
 
 
 QString MainWindow::showNetworkInterfaces()
@@ -115,23 +133,20 @@ QString MainWindow::showNetworkInterfaces()
         if(!connectedStatus.contains("No") && !isVirtualInterface(interface))
         {
             // Ping the supplied address from MyData
-            QString ipAddressToPing = QString::fromStdString(mctData.getRouterIP());
+            QString ipAddressToPing = QString::fromStdString(myData.getIpAddress());
             QProcess pingProcess;
             QString pingCommand;
-            QStringList pingArguments;
             bool canPing;
 
-#ifdef Q_OS_WIN
-            pingCommand = "ping";
-            pingArguments << "-n" <<  "1" << ipAddressToPing;
-#else
-            pingCommand = "ping";
-            pingArguments << "-c" <<  "1" <<  ipAddressToPing;
-#endif
+            #ifdef Q_OS_WIN
+            pingCommand = "ping -n 1 " + ipAddressToPing;
+            #else
+            pingCommand = "ping -c 1 " + ipAddressToPing;
+            #endif
 
 
             //QString pingCommand = "ping -c 1 " + ipAddressToPing;
-            pingProcess.start("ping", pingArguments);
+            pingProcess.start(pingCommand);
             pingProcess.waitForFinished();
             QByteArray pingResult = pingProcess.readAll();
             if(pingResult.contains("Reply from " + ipAddressToPing.toUtf8()) || pingResult.contains("bytes from " + ipAddressToPing.toUtf8()) )
@@ -193,14 +208,7 @@ QString MainWindow::showNetworkInterfaces()
 
 void MainWindow::setNetworkInterface(QString netInterface )
 {
-    //myData.setNetwork(netInterface);
-    mctData.setInterface(netInterface.toStdString());
-
-}
-
-std::string MainWindow::getNetworkInterface()
-{
-    return networkInterface.toStdString(); //return the network interface as a Standard String
+    networkInterface = netInterface;
 }
 
 // Function to check if the interface is virtual
@@ -242,53 +250,3 @@ bool MainWindow::isVirtualInterface(const QNetworkInterface& interface)
 
 
 
-void MainWindow::on_Association_Button_clicked()
-{
-    QString filePath = fileDialog->getOpenFileName();
-    if(!filePath.isEmpty())
-    {
-        associationCSV = filePath;
-
-
-    }
-    //fileDialog = nullptr;
-}
-
-
-void MainWindow::on_Submit_Button_clicked()
-{
-
-
-    mctData.setRouterCSVPath(routerCSV.toStdString());
-    mctData.setMCTVehicleCSVPath(associationCSV.toStdString());
-    mctData.autoUserName();
-    mctData.autoComputerName();
-    mctData.autoComputerIP();
-    mctData.autoRouterMac();
-    mctData.autoComputerMacAddress();
-
-
-
-    QApplication::quit();
-}
-
-
-
-
-
-
-
-
-
-
-
-void MainWindow::on_Cancel_Button_clicked()
-{
-    QApplication::exit();
-}
-
-
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
