@@ -12,6 +12,7 @@
 #include <QDir>
 #include<QProcess>
 #include<QRegularExpression>
+#include<QOperatingSystemVersion>
 
 
 #define MAX_SIZE 13

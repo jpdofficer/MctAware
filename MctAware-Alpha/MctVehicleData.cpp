@@ -4,6 +4,9 @@ MctVehicleData::MctVehicleData()
 {
     autoTimeStamp();
     setRouterIP("192.168.0.1");
+
+    //initalize the Map
+    MctVehicleDataMap = std::map<std::string, std::string>();
 }
 
 
@@ -27,164 +30,24 @@ void MctVehicleData::autoTimeStamp()
 
 void MctVehicleData::autoUserName()
 {
-    #ifdef Q_OS_WIN //windows specific code
-        #include <windows.h>
-        #include <wbemidl.h>
-        #pragma comment(lib, "wbemuuid.lib")
+    if (QOperatingSystemVersion::current() <= QOperatingSystemVersion::Windows10) {
+        QString homePath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
+            //QFileInfo fileInfo(homePath);
+        QDir homeDir(homePath);
+        QString userName = homeDir.dirName();
+        setUserName(userName.toStdString());
 
-    HRESULT hr;
 
-    // Initialize COM
-    hr = CoInitializeEx(NULL, COINIT_MULTITHREADED);
-    if (FAILED(hr))
+    }
+    else
     {
-        // Handle initialization error
-       QMessageBox::critical(nullptr, "Error", "Unable to initalize COM!");
-        return;
+
+        QString homePath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
+        QString userName = homePath.section(QDir::separator(), -1);
+
+        setUserName(userName.toStdString());
     }
 
-    // Initialize security
-    hr = CoInitializeSecurity(
-        NULL,
-        -1,
-        NULL,
-        NULL,
-        RPC_C_AUTHN_LEVEL_DEFAULT,
-        RPC_C_IMP_LEVEL_IMPERSONATE,
-        NULL,
-        EOAC_NONE,
-        NULL);
-    if (FAILED(hr))
-    {
-        // Handle security initialization error
-        CoUninitialize();
-       QMessageBox::critical(nullptr, "Error", "Security initalization Error!");
-        return;
-    }
-
-    IWbemLocator* pLoc = NULL;
-    IWbemServices* pSvc = NULL;
-    IEnumWbemClassObject* pEnumerator = NULL;
-
-    // Connect to WMI
-    hr = CoCreateInstance(
-        CLSID_WbemLocator,
-        0,
-        CLSCTX_INPROC_SERVER,
-        IID_IWbemLocator,
-        reinterpret_cast<LPVOID*>(&pLoc));
-    if (FAILED(hr))
-    {
-        // Handle WMI connection error
-        CoUninitialize();
-        QMessageBox::critical(nullptr, "Error", "WMI Connection Error!");
-        return;
-    }
-
-    // Connect to the root\cimv2 namespace
-    hr = pLoc->ConnectServer(
-        _bstr_t(L"ROOT\\CIMV2"),
-        NULL,
-        NULL,
-        0,
-        NULL,
-        0,
-        0,
-        &pSvc);
-    if (FAILED(hr))
-    {
-        // Handle namespace connection error
-        pLoc->Release();
-        CoUninitialize();
-        QMessageBox::critical(nullptr, "Error", "Namespace Connection Error!");
-        return;
-    }
-
-    // Set the security level on the proxy
-    hr = CoSetProxyBlanket(
-        pSvc,
-        RPC_C_AUTHN_WINNT,
-        RPC_C_AUTHZ_NONE,
-        NULL,
-        RPC_C_AUTHN_LEVEL_CALL,
-        RPC_C_IMP_LEVEL_IMPERSONATE,
-        NULL,
-        EOAC_NONE);
-    if (FAILED(hr))
-    {
-        // Handle proxy security error
-        pSvc->Release();
-        pLoc->Release();
-        CoUninitialize();
-        return QString();
-    }
-
-    // Query for the Win32_Process class
-    hr = pSvc->ExecQuery(
-        _bstr_t(L"WQL"),
-        _bstr_t(L"SELECT * FROM Win32_Process WHERE Name='explorer.exe'"),
-        WBEM_FLAG_FORWARD_ONLY | WBEM_FLAG_RETURN_IMMEDIATELY,
-        NULL,
-        &pEnumerator);
-    if (FAILED(hr))
-    {
-        // Handle query error
-        pSvc->Release();
-        pLoc->Release();
-        CoUninitialize();
-        QMessageBox::critical(nullptr, "Error", "Unable to execute Query!");
-        return;
-    }
-
-    IWbemClassObject* pclsObj = NULL;
-    ULONG uReturn = 0;
-
-    // Get the first instance of Win32_Process
-    hr = pEnumerator->Next(WBEM_INFINITE, 1, &pclsObj, &uReturn);
-    if (SUCCEEDED(hr) && uReturn > 0)
-    {
-        VARIANT var;
-        CIMTYPE type;
-
-        // Get the owner property of the process
-        hr = pclsObj->Get(L"GetOwner", 0, &var, &type, NULL);
-        if (SUCCEEDED(hr))
-        {
-            // Extract the username
-            QString userName = QString::fromWCharArray(var.bstrVal);
-
-            // Cleanup
-            VariantClear(&var);
-            pclsObj->Release();
-            pEnumerator->Release();
-            pSvc->Release();
-            pLoc->Release();
-            CoUninitialize();
-
-            MctVehicleDataMap["user_name "] =  userName;
-        }
-    }
-
-    // Cleanup in case of failure
-    pEnumerator->Release();
-    pSvc->Release();
-    pLoc->Release();
-    CoUninitialize();
-
-      MctVehicleDataMap["user_name "] =  QString(); // Return empty string if user name is not found
-
-
-    #elif defined(Q_OS_LINUX)
-    /*char* loginName = std::getenv("LOGNAME");
-    if (loginName)
-    {
-        MctVehicleDataMap["user_name "] = QString::fromUtf8(loginName).toStdString();
-    }*/
-    QString homePath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
-    QString userName = homePath.section(QDir::separator(), -1);
-
-    setUserName(userName.toStdString());
-    #endif
 
 
 }
@@ -216,9 +79,9 @@ void MctVehicleData::autoRouterMac() {
     try {
         // Run the 'arp' command to get the MAC address of the router
         QString routerIP = QString::fromStdString(getRouterIP()); // Replace with the appropriate method to get the router IP address
-        QString arpCommand = "arp -n " + routerIP;
+    //    QString arpCommand = "arp -n " + routerIP;
         QProcess arpProcess;
-        arpProcess.start(arpCommand);
+        arpProcess.start("arp", QStringList() << "-n" << routerIP);
         arpProcess.waitForFinished();
 
         // Read the output of the 'arp' command
@@ -295,7 +158,7 @@ void MctVehicleData::setRouterMac(std::string routerMac)
 }
 void MctVehicleData::setRouterIP(std::string routerIP)
 {
-     MctVehicleDataMap["router_ip"] = routerIP;
+    MctVehicleDataMap["router_ip"] = routerIP;
 }
 void MctVehicleData::setRouterSerial(std::string routerSerial)
 {

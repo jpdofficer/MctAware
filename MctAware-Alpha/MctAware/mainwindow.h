@@ -9,6 +9,7 @@
 #include <QMainWindow>
 #include<QFileDialog>
 #include <QFile>
+#include "MctData.h"
 #include<QDebug>
 #include<iostream>
 #include<QVector>
@@ -16,10 +17,6 @@
 #include<QTableWidget>
 #include<QProcess>
 #include<QDialogButtonBox>
-#include<memory.h>
-
-#include "MctVehicleData.h"
-#include "RoutersVehiclesDialog.h"
 
 
 
@@ -35,15 +32,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     QString showNetworkInterfaces();
     bool isVirtualInterface(const QNetworkInterface& interface);
-
+    std::string getInterface();
     void setNetworkInterface(QString netInterface );
-    void setIpAddress(QString ip);
-    void setRouterCSV(QString rcsv);
-    void setAssoCSV(QString assoc);
-    std::string getNetworkInterface();
-    std::string getIpAddress();
-    std::string getRouterCSV();
-    std::string getAssoCSV();
 
     ~MainWindow();
 
@@ -53,9 +43,8 @@ private slots:
     void on_Association_Button_clicked();
     void on_Submit_Button_clicked();
     void on_Network_Button_clicked();
+
     void on_Router_IPEdit_textChanged(const QString &arg1);
-    void on_Cancel_Button_clicked();
-    void on_View_Routers();
 
 private:
     Ui::MainWindow *ui;
@@ -64,8 +53,7 @@ private:
     QString routerCSV;
     QString associationCSV;
     QVector<QNetworkInterface> interfaceVector;//create a vector to store all the Network Interfaces
- //   RoutersVehiclesDialog routerDialog;
-    MctVehicleData * mctData;
+    MctData myData; // stores the data inputed by the user
     QFileDialog *fileDialog; //creates a file dialog so that the user can select the correct files
 
 };
