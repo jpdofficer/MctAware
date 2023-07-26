@@ -72,12 +72,14 @@ void MainWindow::on_View_Routers()
 {
 
     // Open the file dialog to select the router CSV file
-    QString routerCSVPath = "/home/jyeager/Downloads/routers.csv";
-        //QFileDialog::getOpenFileName(this, "Open Router CSV", QString(), "CSV Files (*.csv)");
+    QString routerCSVPath =
+        QFileDialog::getOpenFileName(this, "Open Router CSV", QString(), "CSV Files (*.csv)");
+    QString vehicleCSVPath =
+        QFileDialog::getOpenFileName(this, "Open Vehicle CSV", QString(), "CSV Files (*.csv)");
     if (!routerCSVPath.isEmpty())
     {
         // Create and show the RoutersVehiclesDialog with the selected router CSV file
-        RoutersVehiclesDialog dialog(routerCSVPath, QString(), this);
+        RoutersVehiclesDialog dialog(routerCSVPath, vehicleCSVPath, this);
         dialog.exec();
     }
 }
@@ -136,15 +138,22 @@ QString MainWindow::showNetworkInterfaces()
         const QNetworkInterface& interface = interfaceVector[row];
 
         // Set the interface name
-        QTableWidgetItem* nameItem = new QTableWidgetItem(interface.name());
+        QTableWidgetItem* nameItem = new QTableWidgetItem(interface.humanReadableName());
         tableWidget->setItem(row, 0, nameItem);
 
         // Get the IP address and add it to the table
         QList<QNetworkAddressEntry> addressEntries = interface.addressEntries();
         QString ipAddress;
-        if (!addressEntries.isEmpty()) {
-            ipAddress = addressEntries.first().ip().toString();
+        //if (!addressEntries.isEmpty()) {
+        //    ipAddress = addressEntries.first().ip().toString();
+        //}
+        for (const QNetworkAddressEntry& entry : addressEntries) {
+            if (entry.ip().protocol() == QAbstractSocket::IPv4Protocol) {
+                ipAddress = entry.ip().toString();
+                break;
+            }
         }
+
         QTableWidgetItem* ipAddressItem = new QTableWidgetItem(ipAddress);
         tableWidget->setItem(row, 1, ipAddressItem);
 
