@@ -1,0 +1,25 @@
+
+
+
+Check if a directory and the file exisit
+   if the directory and file exisit continue
+   else
+     create the directory and file
+
+
+
+Get the following data from MctVehicle Data
+    Get the Router Ip Address
+    Get the RouterCSVPath
+    Get the MctVehicleCSVPath
+    set the default interface
+    if any other interface is connected then
+     list those
+   Get the Computer Mac Address
+   Get The router Mac Address 
+
+
+
+Write all this into a xml file
+
+

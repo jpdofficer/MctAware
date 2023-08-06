@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.38.2 (Applications 23.04.2) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uAbftlqz0xTtO" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uulPkJm4yvYEi" name="byte" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="umoD0DNp0fkSX" name="char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uXByp9QlrdsCx" name="decimal" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKZUDGxxUj10K" name="double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKonUmHjNtFAn" name="dynamic" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ugnGqHVMeaI5f" name="fixed" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ufI46oVAcEgPp" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uwzK45OfOdJxz" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uaPJ6DxfNopzT" name="long" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uHJ6J6UM2kjqC" name="nint" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u7GMjOSJOHIOo" name="nuint" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ubXRfXDDROx3I" name="object" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uucOl6Ck2OCBl" name="sbyte" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzOGgSv4Ovzu2" name="short" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzcZxOWoyhbUB" name="string" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="udZn5cpJDAiHz" name="uint" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZXN2CKxpZvV5" name="ulong" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u7YhOdvoqD7o2" name="ushort" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u8Trpy15JVNZv" name="bool[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u22MNjFGq4LOb" name="byte[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ujpc1BgLmkCFS" name="char[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uPe1ie8jTympj" name="decimal[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u88DKqzI9mFBv" name="double[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="us1Esr5CcZit6" name="dynamic[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0blB2x5ZtZSn" name="fixed[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uBCTQpjuBL9rs" name="float[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uQvE9Z1VgZCxU" name="int[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u41wkX37VI870" name="long[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u9aIgJPkCflgA" name="nint[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzXs1EFFeVF4h" name="nuint[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uu9fiPspX9HMj" name="object[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uhrTetFi3QGzD" name="sbyte[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uqMMTcKOdhUfC" name="short[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u8TjHhuAVAGQs" name="string[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u9shSCRM8UErC" name="uint[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u70gmPv3XxRlw" name="ulong[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uaHfABBwTsSq8" name="ushort[]" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uYSRSwfYq9BA0" name="Ui::MainWindow*" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uddLp25gTsCpI" name="undef" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="utWQpkSweUWYE" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKTao8OqoBjRy" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="us7jwPTEP5KxN" name="unsigned int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uCiphi2YXJSHq" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="unePl2P1Tlhcp" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uvXvDDU7QrePe" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uAHNPnUj7x9JL" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzPypyrkH29fI" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="utgn6B2PnWjFd" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uWUYrGjGXXctI" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uupEAEUuHzLZl" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uaNhENYym0Pqr" name="wchar_t" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="upV4MKpTdoxeX" name="vector&lt;std::string&gt;" stereotype="dataType" elementReference="uBAvLbvG7qqy6"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ut8oRXTWPzFCH" name="MctVehicleData*" stereotype="dataType" elementReference="ug0uw4dMuP8JZ"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uwS277GI5GpBW" name="mainwindow" comment="displays a window for the user and handles all actions from click buttons to text files ect">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u0EoA39z47bih" name="ui" comment="This is a pointer to the main window" visibility="private" type="uYSRSwfYq9BA0"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u5lQKuW0p9Mpi" name="ipaddress" comment="This stores the ip address" visibility="private" type="u8rwLCwvXoofq" initialValue="192.168.0.1"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uJNBy0OEI3dO4" name="routerCSV" comment="Stores the path to the router csv" visibility="private" type="u8rwLCwvXoofq" initialValue="null"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ulHBceL2W6X2f" name="interfaceVector" comment="A vector that stores all network interfaces" visibility="private" type="uy4HyWwq5DGAr" initialValue="null"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uLXkkvpMkVfoC" name="mctData" comment="Stores all values inputed from the user" visibility="private" type="ut8oRXTWPzFCH" initialValue="null"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u4s9QVnIWYvnz" name="fileDialog" comment="Creates a file dialog to the system" visibility="private" type="u0T2mHHI38eqB"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uZQxUF7yW3ch1" name="showNetworkInterfaces" comment="Shows the network interfaces that are located on the computer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uonBcPvA94oxP" type="u8rwLCwvXoofq" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uCQiypYpVuCGn" name="isVirtualInterface" comment="isVirtualInterface attempts to weed out any virtual interfaces from the interfaceVector">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uA24JKd10ZMGZ" type="uAbftlqz0xTtO" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u7Ht8aCAZkDWF" name="interface" comment="This parameter stores the interface that is being checked " visibility="private" type="urkrNPweTO0UT" value="QNetworkInterface"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ucfB235T5k8oZ" name="getNetworkInterface" comment="returns a standard string with the network interface name"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uQWHoD8mrJ8Bi" name="showNetworkInterface" comment="sets the selected network interface to the MctVehicleData map ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u3YNjBAazs9G1" name="netInterface" comment="Stores the network interface that is selected from the network interfaces dialog" visibility="private" type="u8rwLCwvXoofq" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u2ZiEbEw7TbZZ" name="on_Router_Button_clicked()" comment="When the user clicks on Select Router CSV. This function opens a file dialog so that the user can select the CSV file that stores all the routers" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ugj1hPISNJni4" name="on_Association_Button_clicked" comment="When the clicks on Select Association CSV, it opens a file dialog to the user allowing them to select the CSV  file in which associations between the router and the computer " visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uOFWuLereKCUl" name="on_Submit_Button_clicked" comment="When the user clicks on the Submit Button, from the interface, this sets the routerCSVPath and AssociatedCVS file path then quits the program" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uDQRdOOErhN3s" name="on_Network_Button_clicked" comment="Gets all network interfaces and stores them in a vector" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ucggtVWGHfVsL" name="on_Router_IPEdit_textChanged" comment="If the QLineEdit changes this updates that change" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uA85ARJ9vBhob" name="ip" comment="Stores the ip address that is in the LineEdit" visibility="private" type="u8rwLCwvXoofq" value="ip address"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uMDLzcicLCUcE" name="on_Cancel_Button_clicked" comment="Closes the application " visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uk2kUNmcKLS2d" name="On_View_Routers" comment="On View Routers, either reads a supplied xml file or prompts the user for the csv files that show all the routers that we have and all the vehicle routers we have"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u8rwLCwvXoofq" name="QString"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="uy4HyWwq5DGAr" name="QVector"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="u0T2mHHI38eqB" name="QFileDialog ptr"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="urkrNPweTO0UT" name="QNetworkInterface&amp;"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="urYd41M1Glbcq" name="map"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="uLcVFG3cU4PnO" name="std::map&lt;std::string,std::string&gt;"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ulifiwh96j1HF" name="const std::string"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ukQCQtcrAEutf" name="std::string"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ug0uw4dMuP8JZ" name="MctVehicleData" comment="MctVehicleData stores data relating to the association between the computer used in the vehicle and the vehicles network">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uWP5WdOviTWs0" name="MctVehicleDataMap" comment="Stores all the data from the mainwindow" visibility="private" type="uLcVFG3cU4PnO"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uPg2QQAnLAVoF" name="MctVehicleData" comment="The default constructor of the MctVehicleData class. It calls the autoTimeStamp and sets the router ip to a default of 192.168.0.1">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uitmaZhAPvJNo" type="ug0uw4dMuP8JZ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="urT8yiNxNg4Ux" name="autoTimeStamp" comment="Creates a timestamp that documents when the program is run"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uFMiB7OkZBgQL" name="autoUserName" comment="Gets the user name from the computer. It does this with regard to a application that is running for example explorer.exe. I have done it this way so that if the program is ran by a cron job or Task Manager it should still give the correct username and not the runner of the task/cron"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ukoxMQ8q6wUZw" name="autoComputerIP" comment="A function that gets the ip address of the computer not the router"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usoZplxrO80iC" name="autoRouterMac" comment="Gets the routers mac by using arp function"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uL0AYfGerDMnt" name="autoComputerMacAddress" comment="Gets the computers Mac address"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uDADHRfTN8WgG" name="autoComputerName" comment="sets the computer name"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usk26hpOpMrTK" name="setUserName" comment="sets the Username">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="upmHTUqHFpOM2" name="uname" comment="sets the username " visibility="private" type="ukQCQtcrAEutf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uzLvF5FuZc4vL" name="setComputerName" comment="sets the Computer Name">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uiow7MUqyPOLd" name="compname" comment="stores the computers name in the parameter" visibility="private" type="ukQCQtcrAEutf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ut1hL0Krzsvc7" name="setComputerMacAddress" comment="sets the computers mac address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u0V1RIbyFtGPi" name="computerMac" comment="stores the passed in the computer Mac" visibility="private" type="ukQCQtcrAEutf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uQaHGxlEXo3CZ" name="setComputerIP" comment="sets the computerIP">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uYFMBnjFMXFSY" name="computerIP" comment="stores in the parameter computer ip" visibility="private" type="ukQCQtcrAEutf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u9ZRBmVD9c7SS" name="setRouterName" comment="sets a routers name">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ukzzEhozbeucD" name="routerName" visibility="private" type="ukQCQtcrAEutf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJDwLXHpb6dQx" name="setRouterMac" comment="sets the routers mac address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ur6gJmYWQb2Iw" name="routerMac" comment="the user provided router mac address" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u37Hth1YWexWp" name="setRouterIP" comment="sets the routers IP address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uSh5sIm1ObJRG" name="routerIP" comment="the provided router ip address" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ubam1tjWJ7UFm" name="setRouterSerial" comment="Sets the routers serial number">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uFsJcQds9Lchk" name="routerSerial" comment="parameter containing the router serial number" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uzYyGKQ6zTxqy" name="setRouterState" comment="Sets the routers state such as online, offline, idle ect">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u1OTgimN1o3e9" name="routerState" comment="contains the routers state of operation" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uw87nEevO70Je" name="setRouterCSVPath" comment="This sets the routers csv path. ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uo2y0zRxp7tM2" name="new_parameter" comment="contains the path string to the router csv" visibility="private" type="ukQCQtcrAEutf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujOtS8E0rAF7g" name="setMctVehicleCSVPath" comment="Sets the path to the vehicle csv">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uvYlp0BKWdScA" name="mctVehiclePath" comment="the path to the mctvehicle csv " visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJzcwBSS9z1gV" name="setInterface" comment="This sets the network interface">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u4Kxji0ZNMCTl" name="interface" comment="passed in value for the network interface" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uZaJy5Gg6QfVA" name="getTimeStamp" comment="Returns the generated time stamp">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uy4jdw9Fbq2EX" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u1IihrOGz7rs7" name="getComputerName" comment="Returns the computer name">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uxkCAx2vnboh7" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uhkNQwWr4CnKO" name="getUserName" comment="Returns the username">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="urTYaAUk4DRJP" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uTE1fav7i0rok" name="getComputerMacAddress" comment="Returns the computer mac address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ui6gzecg3MO98" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uOOs2aywkmgBe" name="getComputerIP" comment="Returns the selected interfaces ip address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uH9HN9uwWrjiX" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uxddcfLCuE7Gw" name="getRouterName" comment="Returns the name assigned to the router">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ufHSe5qR1TE9y" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uWlyaDFLTRBGh" name="getRouterMac" comment="returns the routers mac address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u5siY57BZOFWz" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uVGdgbX9CHwxR" name="getRouterIP" comment="returns the routers IP address">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u5fOama6NV4pa" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uZ1EALyJIaiGw" name="getRouterSerial" comment="returns the routers serial number">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uvwpBoucMyc93" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u4CPpnhMTrHq2" name="getRouterState" comment="Returns the routers state, as in enabled, reachable, unreachable">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uaVpZcaMbG8xH" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uNb0IF4XSYbCg" name="getRouterCSVPath" comment="returns the routers csv pat">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uHJeHicMCB4Tw" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uwZwt05lLXyI4" name="getMCTVehicleCSVPath" comment="returns the association csv that associates the vehicle with a computer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uBVmyyKsamjDq" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uV4Mr7hlACSBs" name="getInterface" comment="returns the interface selected by the user">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="upTGm0w7tsw8x" type="ukQCQtcrAEutf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uxWoOWqJdlPW2" name="writeConfigXMLFile()" comment="Writes the config file for the program that hold configuration information"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uNJRfnMwt1LTp" name="CsvFileHandler" comment="CsvFileHandler can read or write CSV files for the system">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uFrReYoyyh6pK" name="filePath" comment="PathsToRead stores all the paths to each csv file" visibility="private" type="upV4MKpTdoxeX" initialValue="null"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="unCLndd1PhFK8" name="CsvFileHandler" comment="A constructor that takes a vector for the file paths">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uLrdiPTye7iEv" type="uNJRfnMwt1LTp" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uU0e4sK5Kk0Tr" name="filePaths" comment="stores the file paths that are needed" visibility="private" type="upV4MKpTdoxeX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="unq36HD1pn82o" name="readFromCSVFile" comment="Reads A CSV File"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ubOC1OxD4tNa3" name="writeToCSVFile" comment="Writes the CSV file. In order to do this I think we need one row that is all the columns and another that has all the data">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ugQ3AuGB5igIX" name="headers" comment="Stores the header row titles" visibility="private" type="ur3j9wnnqHCUr" value="null"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uJbL1ZI5Paf6y" name="data" comment="stores the data that will be placed in the file" visibility="private" type="u9s2BnORppJ1r" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="umQjLTLWrkR9u" name="appendToCSVFile" comment="Appends to a CSV file">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uI5VqmAzKB5ib" name="data" comment="The passed in data" visibility="private" type="u9s2BnORppJ1r" value="null"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="ur4lfFnO77McQ" name="XmlFileHandler" comment="XML file handler is to handle all input and output of XmlDocuments">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uYBSirswRimXs" name="dir" comment="Stores the path of the file" visibility="private" type="ucMdnaa4UWV1e" initialValue="null"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u0ZBNOqDEv12b" name="directory" comment="The directory the file is stored in" visibility="private" type="ucMdnaa4UWV1e" initialValue="null"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uG9t9jU1SwNbf" name="xmlFile" comment="The name of the file " visibility="private" type="uR3WwRDlgw8eC" initialValue="null"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ui7HxBIyi18su" name="xmlFileDialog" comment="A file dialog for the user to select the file" visibility="private" type="usqoD2O7eQNgV" initialValue="null"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uLRqG3TgriAC5" name="XmlFileDir" comment="The default constructor of XmlFileDir"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ub3nzbEYe06Yp" name="XmlFileReader" comment="Reads a XMLFile">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="upUnXmN0ifeB7" name="fileName" comment="The passed in file name" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uAzKL3sKx8sWV" name="XMLFileWriter" comment="Writes a XmlFile">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uwvMnUOcEqIwR" name="filename" comment="Writes to an xml file" visibility="private" type="ukQCQtcrAEutf" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uAsV9zbVNJHIi" name="XMLTags" comment="Stores a list of tagnames found in a xml file, so that we can read any xml file name">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uY44mEVkOzP39" name="filename" comment="Stores the filename" visibility="private" type="ukQCQtcrAEutf" value="Null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uSbwqcobYsiak" name="setDirectory" comment="Sets the directory ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ulDSWbRI4fbIS" name="dir" comment="provided path to the directory" visibility="private" type="u8rwLCwvXoofq" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usMnZoc1RycqE" name="setXmlFile" comment="sets the XMLFile for reading/writing/appending">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ue69MzPHjXS64" name="fileName" comment="the passed in name of the file" visibility="private" type="uR3WwRDlgw8eC" value="null"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u2PMOnmfa23lD" name="getDirectory" comment="Returns the directory in a standard string format"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ugdxI4mlbQ4aF" name="setTagNames" comment="This function loops through the xml file and gets all the tag attributes">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u8NzP1DUYG66T" name="xmlFile" comment="The XML File that gets all the tags" visibility="private" type="uR3WwRDlgw8eC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u2eW8PCRnAkg7" name="getTagNames" comment="Returns the TagNames to the caller"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uTx6Ewxz9pB5W" name="getXmlFile" comment="Returns the XmlFile name in string form"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uWnc4HjVlCxnt" name="SqlFileHandler"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="uBAvLbvG7qqy6" name="vector"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="u9s2BnORppJ1r" name="const QVector&lt;QStringList&gt;&amp;"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ur3j9wnnqHCUr" name="QStringList&amp;"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ucMdnaa4UWV1e" name="QDir"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="uR3WwRDlgw8eC" name="QFile"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="usqoD2O7eQNgV" name="QFileDialog"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="udVqgCQ0SYdba" name="RoutersVehiclesDialog" comment="Routers vehicle dialog shows all the Ethernet and wifi network interfaces to the user"/>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="usKjcpy7X2On2" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" griddotcolor="#232629" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="0" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="93" canvasheight="691.066" canvaswidth="2387" isopen="1">
+            <widgets>
+              <classwidget xmi.id="uNJRfnMwt1LTp" localid="uYtpiQxdjBBBB" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="50" y="40.3822" width="514" height="108" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uwS277GI5GpBW" localid="uuoLV1p2GbW3f" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="1076.77" y="219.347" width="494" height="324" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="ug0uw4dMuP8JZ" localid="ufjrEx82neBQ6" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="1745.96" y="61.0661" width="367" height="630" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="ur4lfFnO77McQ" localid="uVJ2VaN8CkNCM" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="718.389" y="43.5485" width="280" height="270" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uWnc4HjVlCxnt" localid="uBWoPqrjhcsf5" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="2282" y="158.183" width="105" height="36" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="udVqgCQ0SYdba" localid="ukmhjmuTxqYPN" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="266.093" y="355.86" width="147" height="36" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="uLXkkvpMkVfoC" localid="uRBjzm5IgXEgW" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="501" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uwS277GI5GpBW" widgetbid="ug0uw4dMuP8JZ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="ujh5UETbRqEf2" localid="uzwVyus0fNg8Q" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,0,50,0,0,0,0,0" autoresize="1" x="1680.94" y="409.36" width="64" height="22" isinstance="0" showstereotype="2" text="mctData" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1570.77" starty="379.193"/>
+                  <endpoint endx="1745.96" endy="377.666"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+          <diagram xmi.id="u2lOEWToRaERY" name="mctvehicle" type="3" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" griddotcolor="#232629" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="0" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1" autoincrementsequence="0">
+            <widgets>
+              <objectwidget xmi.id="uwS277GI5GpBW" localid="uue17akQYgCKz" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="71" y="80" width="98" height="28" isinstance="0" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View">
+      <packagedElement xmi:type="uml:Actor" xmi:id="uJkBFbBA8vjrk" name="John"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="u9wPhq5cacXel" name="mainwindow"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="u4yXXH8Gis8JV" name="mctvehicle"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="u3cRFrEY0SYGd" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uRVivDlKrWAKe" name="" type="uJkBFbBA8vjrk" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uonm8k46lfSwe" name="" type="u9wPhq5cacXel" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="uQowQ6rogQmdy" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="u0i3wMNUdH11D" name="" type="u9wPhq5cacXel" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uNjcgX61KfMsR" name="" type="u4yXXH8Gis8JV" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uXxdu8pCtHX7n" name="config file"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="uSDh2oxvrpgOc" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uswtEfk95sVBj" name="" type="u4yXXH8Gis8JV" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uTxkfaXtULynW" name="" type="uXxdu8pCtHX7n" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="uFx6WpyB92lrW" name="Computer"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uhkfrE1FbsOO9" name="config file_1"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="uSTjxuCoxA5mM" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="unbmMuRgzHqJa" name="" type="uFx6WpyB92lrW" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uoAnlceONHrDl" name="" type="uhkfrE1FbsOO9" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uGkTB4EDhEq7o" name="main"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="u2f810mGL5LNA" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="udoqN2Aj1HqMu" name="" type="uhkfrE1FbsOO9" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uaYL6FHM3NLqY" name="" type="uGkTB4EDhEq7o" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uR00G3yrqZQYW" name="mctvehicle_1"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="uxC3xoq3XfsCI" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uu9z0sGjyKPOX" name="" type="uGkTB4EDhEq7o" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uyhxM613kATfH" name="" type="uR00G3yrqZQYW" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uOLUT6Iq7Mwya" name="database"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uW3XJcfIJWZTp" name="vehicle csv"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="uzWtMg8saPmAi" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uiybvfQ4Cj7Af" name="" type="uR00G3yrqZQYW" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="u5flUNTpo4t51" name="" type="uOLUT6Iq7Mwya" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="umcTF3BQyTOlT" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uY7JH7LiZ04pr" name="" type="uOLUT6Iq7Mwya" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uXAKipfp7L0c6" name="" type="uW3XJcfIJWZTp" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="uNjstBhkTDAto" name="loops"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="uNwix6XNXRyhN" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="u16kd0aTaaP0Q" name="" type="uhkfrE1FbsOO9" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uJBw0BpUOegMv" name="" type="uNjstBhkTDAto" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="u3DRXwAlHPZ0y" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="u8rymnHqlRdL4" name="" type="uNjstBhkTDAto" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uGhPPegoO6NWW" name="" type="uW3XJcfIJWZTp" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uZ4D95cF9ziYa" name="MCTVehicle" type="2" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" griddotcolor="#232629" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="0" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <floatingtext xmi.id="uKXrIonmDOlQx" localid="ux6LaDm4uSbJ5" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="834" y="369" width="104" height="22" isinstance="0" showstereotype="2" text="stores into local" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uQE4g9Gxj4YFg" localid="u9ZAdG5injcIf" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="862" y="483" width="115" height="22" isinstance="0" showstereotype="2" text="writes to network" pretext="" posttext="" role="700"/>
+              <usecasewidget xmi.id="uhkfrE1FbsOO9" localid="uG9TqxVt2vZ5z" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="270" y="368" width="88" height="53" isinstance="0" showstereotype="2"/>
+              <floatingtext xmi.id="u2jBjvNLTBXhV" localid="utMQ29am6IAUO" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="370" y="370" width="86" height="22" isinstance="0" showstereotype="2" text="gathers data" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uJ7jPAFG7xxcS" localid="ubOzbz9yj0vEk" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="437" y="243" width="155" height="22" isinstance="0" showstereotype="2" text="Stores data entered into" pretext="" posttext="" role="700"/>
+              <usecasewidget xmi.id="u4yXXH8Gis8JV" localid="ujEM2q66CD582" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="668" y="240" width="81" height="53" isinstance="0" showstereotype="2"/>
+              <floatingtext xmi.id="uPPDbndeBCVQi" localid="uCtyw01kLhGQy" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="203" y="370" width="65" height="22" isinstance="0" showstereotype="2" text="reads the" pretext="" posttext="" role="700"/>
+              <usecasewidget xmi.id="uXxdu8pCtHX7n" localid="uIx0tJmHbiYV6" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="943" y="242" width="75" height="53" isinstance="0" showstereotype="2"/>
+              <floatingtext xmi.id="uJ7jPAFG7xxcS" localid="uwxBu8YoOYpe5" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="543" y="369" width="155" height="22" isinstance="0" showstereotype="2" text="Stores data entered into" pretext="" posttext="" role="700"/>
+              <usecasewidget xmi.id="uNjstBhkTDAto" localid="u2nKdihKJJFfY" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="283" y="547" width="70" height="53" isinstance="0" showstereotype="2"/>
+              <floatingtext xmi.id="uJTHdSVjdgQfO" localid="u1ru99AJrGyo2" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="781" y="235" width="119" height="22" isinstance="0" showstereotype="2" text="writes a config file" pretext="" posttext="" role="700"/>
+              <usecasewidget xmi.id="uGkTB4EDhEq7o" localid="u0ff5FXd969CL" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="463" y="366" width="70" height="53" isinstance="0" showstereotype="2"/>
+              <usecasewidget xmi.id="uOLUT6Iq7Mwya" localid="uFZHnv50Thyrs" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="947" y="367" width="70" height="53" isinstance="0" showstereotype="2"/>
+              <actorwidget xmi.id="uJkBFbBA8vjrk" localid="uja2OzsaO9qvQ" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="86" y="245" width="40" height="40" isinstance="0" showstereotype="2"/>
+              <usecasewidget xmi.id="u9wPhq5cacXel" localid="uyNWyvxuplZ2R" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="327" y="237" width="94" height="53" isinstance="0" showstereotype="2"/>
+              <usecasewidget xmi.id="uW3XJcfIJWZTp" localid="uUmIKGTk93E0k" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="940" y="551" width="81" height="53" isinstance="0" showstereotype="2"/>
+              <actorwidget xmi.id="uFx6WpyB92lrW" localid="uajUbmtLUA5v9" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="0" x="72" y="361" width="72" height="72" isinstance="0" showstereotype="2"/>
+              <usecasewidget xmi.id="uR00G3yrqZQYW" localid="uD5WpnvTLYiWW" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="0" x="697" y="363" width="101" height="59" isinstance="0" showstereotype="2"/>
+              <floatingtext xmi.id="uHz8ZOqHpopX8" localid="upXcKgAYGnVb2" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="131" y="236" width="180" height="22" isinstance="0" showstereotype="2" text="Enters all data into interface" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="u4j14kAF0KGnf" localid="uybpD8ihc1Rpf" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="0" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="546" y="561" width="152" height="22" isinstance="0" showstereotype="2" text="CronJob/Task Scheduler" pretext="" posttext="" role="700"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="u3DRXwAlHPZ0y" localid="uTSyxq4Htg516" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uNjstBhkTDAto" widgetbid="uW3XJcfIJWZTp" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="353" starty="573.711"/>
+                  <endpoint endx="940" endy="577.255"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uNwix6XNXRyhN" localid="ugbHAiqpu0L5b" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uhkfrE1FbsOO9" widgetbid="uNjstBhkTDAto" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="314.592" starty="421"/>
+                  <endpoint endx="317.408" endy="547"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="umcTF3BQyTOlT" localid="uO7IOD1lDxHT3" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uOLUT6Iq7Mwya" widgetbid="uW3XJcfIJWZTp" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="981.784" starty="420"/>
+                  <endpoint endx="980.716" endy="551"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uzWtMg8saPmAi" localid="uzFvXfWAlHfyU" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uR00G3yrqZQYW" widgetbid="uOLUT6Iq7Mwya" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="798" starty="392.715"/>
+                  <endpoint endx="947" endy="393.351"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uSTjxuCoxA5mM" localid="u4bLaXBmTk8fz" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uFx6WpyB92lrW" widgetbid="uhkfrE1FbsOO9" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="144" starty="396.563"/>
+                  <endpoint endx="270" endy="395.034"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u2f810mGL5LNA" localid="uLJTr0Bp2vNAo" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uhkfrE1FbsOO9" widgetbid="uGkTB4EDhEq7o" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="358" starty="394.022"/>
+                  <endpoint endx="463" endy="392.88"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uxC3xoq3XfsCI" localid="ueUNLgcR6rTJy" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uGkTB4EDhEq7o" widgetbid="uR00G3yrqZQYW" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="533" starty="392.5"/>
+                  <endpoint endx="697" endy="392.5"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uSDh2oxvrpgOc" localid="uvq1mbfa6UekP" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="u4yXXH8Gis8JV" widgetbid="uXxdu8pCtHX7n" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="749" starty="266.798"/>
+                  <endpoint endx="943" endy="268.224"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uQowQ6rogQmdy" localid="uysCF3HZVXIsk" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="u9wPhq5cacXel" widgetbid="u4yXXH8Gis8JV" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="421" starty="263.922"/>
+                  <endpoint endx="668" endy="266.137"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u3cRFrEY0SYGd" localid="uTu2kXKZHJsp8" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Noto Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="uJkBFbBA8vjrk" widgetbid="u9wPhq5cacXel" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="126" starty="264.888"/>
+                  <endpoint endx="327" endy="263.763"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="usKjcpy7X2On2" documentation="" uniqueid="uk2kUNmcKLS2d"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uNJRfnMwt1LTp" type="813" open="1">
+            <listitem id="unCLndd1PhFK8" type="815" open="0"/>
+            <listitem id="umQjLTLWrkR9u" type="815" open="0"/>
+            <listitem id="uFrReYoyyh6pK" type="814" open="0"/>
+            <listitem id="unq36HD1pn82o" type="815" open="0"/>
+            <listitem id="ubOC1OxD4tNa3" type="815" open="0"/>
+          </listitem>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="ut8oRXTWPzFCH" type="829" open="1"/>
+            <listitem id="uAbftlqz0xTtO" type="829" open="0"/>
+            <listitem id="umoD0DNp0fkSX" type="829" open="1"/>
+            <listitem id="uKZUDGxxUj10K" type="829" open="1"/>
+            <listitem id="ufI46oVAcEgPp" type="829" open="1"/>
+            <listitem id="uwzK45OfOdJxz" type="829" open="1"/>
+            <listitem id="uupEAEUuHzLZl" type="829" open="1"/>
+            <listitem id="uzPypyrkH29fI" type="829" open="1"/>
+            <listitem id="unePl2P1Tlhcp" type="829" open="0"/>
+            <listitem id="uKTao8OqoBjRy" type="829" open="1"/>
+            <listitem id="uCiphi2YXJSHq" type="829" open="1"/>
+            <listitem id="utgn6B2PnWjFd" type="829" open="1"/>
+            <listitem id="uAHNPnUj7x9JL" type="829" open="1"/>
+            <listitem id="uzcZxOWoyhbUB" type="829" open="1"/>
+            <listitem id="utWQpkSweUWYE" type="829" open="1"/>
+            <listitem id="us7jwPTEP5KxN" type="829" open="1"/>
+            <listitem id="uWUYrGjGXXctI" type="829" open="1"/>
+            <listitem id="uvXvDDU7QrePe" type="829" open="1"/>
+            <listitem id="upV4MKpTdoxeX" type="829" open="1"/>
+            <listitem id="uaNhENYym0Pqr" type="829" open="1"/>
+          </listitem>
+          <listitem id="ug0uw4dMuP8JZ" type="813" open="0">
+            <listitem id="uPg2QQAnLAVoF" type="815" open="0"/>
+            <listitem id="uWP5WdOviTWs0" type="814" open="0"/>
+            <listitem id="ukoxMQ8q6wUZw" type="815" open="0"/>
+            <listitem id="uL0AYfGerDMnt" type="815" open="0"/>
+            <listitem id="uDADHRfTN8WgG" type="815" open="0"/>
+            <listitem id="usoZplxrO80iC" type="815" open="0"/>
+            <listitem id="urT8yiNxNg4Ux" type="815" open="0"/>
+            <listitem id="uFMiB7OkZBgQL" type="815" open="0"/>
+            <listitem id="uOOs2aywkmgBe" type="815" open="0"/>
+            <listitem id="uTE1fav7i0rok" type="815" open="0"/>
+            <listitem id="u1IihrOGz7rs7" type="815" open="0"/>
+            <listitem id="uV4Mr7hlACSBs" type="815" open="0"/>
+            <listitem id="uwZwt05lLXyI4" type="815" open="0"/>
+            <listitem id="uNb0IF4XSYbCg" type="815" open="0"/>
+            <listitem id="uVGdgbX9CHwxR" type="815" open="0"/>
+            <listitem id="uWlyaDFLTRBGh" type="815" open="0"/>
+            <listitem id="uxddcfLCuE7Gw" type="815" open="0"/>
+            <listitem id="uZ1EALyJIaiGw" type="815" open="0"/>
+            <listitem id="u4CPpnhMTrHq2" type="815" open="0"/>
+            <listitem id="uZaJy5Gg6QfVA" type="815" open="0"/>
+            <listitem id="uhkNQwWr4CnKO" type="815" open="0"/>
+            <listitem id="uQaHGxlEXo3CZ" type="815" open="0"/>
+            <listitem id="ut1hL0Krzsvc7" type="815" open="0"/>
+            <listitem id="uzLvF5FuZc4vL" type="815" open="0"/>
+            <listitem id="uJzcwBSS9z1gV" type="815" open="0"/>
+            <listitem id="ujOtS8E0rAF7g" type="815" open="0"/>
+            <listitem id="uw87nEevO70Je" type="815" open="0"/>
+            <listitem id="u37Hth1YWexWp" type="815" open="0"/>
+            <listitem id="uJDwLXHpb6dQx" type="815" open="0"/>
+            <listitem id="u9ZRBmVD9c7SS" type="815" open="0"/>
+            <listitem id="ubam1tjWJ7UFm" type="815" open="0"/>
+            <listitem id="uzYyGKQ6zTxqy" type="815" open="0"/>
+            <listitem id="usk26hpOpMrTK" type="815" open="0"/>
+            <listitem id="uxWoOWqJdlPW2" type="815" open="0"/>
+          </listitem>
+          <listitem id="ucMdnaa4UWV1e" type="813" open="1"/>
+          <listitem id="uR3WwRDlgw8eC" type="813" open="1"/>
+          <listitem id="usqoD2O7eQNgV" type="813" open="1"/>
+          <listitem id="u0T2mHHI38eqB" type="813" open="1"/>
+          <listitem id="urkrNPweTO0UT" type="813" open="1"/>
+          <listitem id="u8rwLCwvXoofq" type="813" open="1"/>
+          <listitem id="ur3j9wnnqHCUr" type="813" open="1"/>
+          <listitem id="uy4HyWwq5DGAr" type="813" open="1"/>
+          <listitem id="udVqgCQ0SYdba" type="813" open="1"/>
+          <listitem id="uWnc4HjVlCxnt" type="813" open="1"/>
+          <listitem id="ur4lfFnO77McQ" type="813" open="1">
+            <listitem id="uAzKL3sKx8sWV" type="815" open="0"/>
+            <listitem id="uAsV9zbVNJHIi" type="815" open="0"/>
+            <listitem id="uLRqG3TgriAC5" type="815" open="0"/>
+            <listitem id="ub3nzbEYe06Yp" type="815" open="0"/>
+            <listitem id="uYBSirswRimXs" type="814" open="0"/>
+            <listitem id="u0ZBNOqDEv12b" type="814" open="0"/>
+            <listitem id="u2PMOnmfa23lD" type="815" open="0"/>
+            <listitem id="u2eW8PCRnAkg7" type="815" open="0"/>
+            <listitem id="uTx6Ewxz9pB5W" type="815" open="0"/>
+            <listitem id="uSbwqcobYsiak" type="815" open="0"/>
+            <listitem id="ugdxI4mlbQ4aF" type="815" open="0"/>
+            <listitem id="usMnZoc1RycqE" type="815" open="0"/>
+            <listitem id="uG9t9jU1SwNbf" type="814" open="0"/>
+            <listitem id="ui7HxBIyi18su" type="814" open="0"/>
+          </listitem>
+          <listitem id="usKjcpy7X2On2" type="807" label="class diagram" open="0"/>
+          <listitem id="u9s2BnORppJ1r" type="813" open="1"/>
+          <listitem id="ulifiwh96j1HF" type="813" open="1"/>
+          <listitem id="uwS277GI5GpBW" type="813" open="1">
+            <listitem id="uk2kUNmcKLS2d" type="815" open="0"/>
+            <listitem id="u4s9QVnIWYvnz" type="814" open="0"/>
+            <listitem id="ucfB235T5k8oZ" type="815" open="0"/>
+            <listitem id="ulHBceL2W6X2f" type="814" open="0"/>
+            <listitem id="u5lQKuW0p9Mpi" type="814" open="0"/>
+            <listitem id="uCQiypYpVuCGn" type="815" open="0"/>
+            <listitem id="uLXkkvpMkVfoC" type="814" open="0"/>
+            <listitem id="ugj1hPISNJni4" type="815" open="0"/>
+            <listitem id="uMDLzcicLCUcE" type="815" open="0"/>
+            <listitem id="uDQRdOOErhN3s" type="815" open="0"/>
+            <listitem id="u2ZiEbEw7TbZZ" type="815" open="0"/>
+            <listitem id="ucggtVWGHfVsL" type="815" open="0"/>
+            <listitem id="uOFWuLereKCUl" type="815" open="0"/>
+            <listitem id="uJNBy0OEI3dO4" type="814" open="0"/>
+            <listitem id="uQWHoD8mrJ8Bi" type="815" open="0"/>
+            <listitem id="uZQxUF7yW3ch1" type="815" open="0"/>
+            <listitem id="u0EoA39z47bih" type="814" open="0"/>
+          </listitem>
+          <listitem id="urYd41M1Glbcq" type="813" open="1"/>
+          <listitem id="u2lOEWToRaERY" type="810" label="mctvehicle" open="0"/>
+          <listitem id="uLcVFG3cU4PnO" type="813" open="1"/>
+          <listitem id="ukQCQtcrAEutf" type="813" open="1"/>
+          <listitem id="uBAvLbvG7qqy6" type="813" open="1"/>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="0">
+          <listitem id="uFx6WpyB92lrW" type="811" open="1"/>
+          <listitem id="uJkBFbBA8vjrk" type="811" open="1"/>
+          <listitem id="uZ4D95cF9ziYa" type="805" label="MCTVehicle" open="0"/>
+          <listitem id="uXxdu8pCtHX7n" type="812" open="1"/>
+          <listitem id="uhkfrE1FbsOO9" type="812" open="1"/>
+          <listitem id="uOLUT6Iq7Mwya" type="812" open="1"/>
+          <listitem id="uNjstBhkTDAto" type="812" open="1"/>
+          <listitem id="uGkTB4EDhEq7o" type="812" open="1"/>
+          <listitem id="u9wPhq5cacXel" type="812" open="1"/>
+          <listitem id="u4yXXH8Gis8JV" type="812" open="1"/>
+          <listitem id="uR00G3yrqZQYW" type="812" open="1"/>
+          <listitem id="uW3XJcfIJWZTp" type="812" open="1"/>
+        </listitem>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++">
+        <sourcecode id="uZQxUF7yW3ch1" value="// Create a QTableWidget and set the column count and headers&#10;    QTableWidget* tableWidget = new QTableWidget;&#10;    tableWidget-&gt;setColumnCount(4); // set the amount of columns&#10;    QStringList headers = { &quot;Name&quot;, &quot;IP Address&quot;, &quot;Connected&quot;, &quot;Can Ping&quot; }; // a String list that holds the columns name&#10;    tableWidget-&gt;setHorizontalHeaderLabels(headers); // call to setHorizontalHeaderLabels to tell the program where to put the names&#10;&#10;    // Set the row count based on the number of network interfaces&#10;    int rowCount = interfaceVector.size(); // get the size of the vector&#10;    tableWidget-&gt;setRowCount(rowCount); // count how many rows we have&#10;&#10;    // Populate the table with network interface details&#10;    for (int row = 0; row &lt; rowCount; ++row) {&#10;        const QNetworkInterface&amp; interface = interfaceVector[row];&#10;&#10;        // Set the interface name&#10;        QTableWidgetItem* nameItem = new QTableWidgetItem(interface.name());&#10;        tableWidget-&gt;setItem(row, 0, nameItem);&#10;&#10;        // Get the IP address and add it to the table&#10;        QList&lt;QNetworkAddressEntry&gt; addressEntries = interface.addressEntries();&#10;        QString ipAddress;&#10;        if (!addressEntries.isEmpty()) {&#10;            ipAddress = addressEntries.first().ip().toString();&#10;        }&#10;        QTableWidgetItem* ipAddressItem = new QTableWidgetItem(ipAddress);&#10;        tableWidget-&gt;setItem(row, 1, ipAddressItem);&#10;&#10;        // Check connection status&#10;        bool isConnected = interface.flags().testFlag(QNetworkInterface::IsUp) &amp;&amp;&#10;                           !interface.flags().testFlag(QNetworkInterface::IsLoopBack);&#10;        QString connectedStatus = isConnected ? &quot;Yes&quot; : &quot;No&quot;;&#10;        QTableWidgetItem* connectedItem = new QTableWidgetItem(connectedStatus);&#10;        tableWidget-&gt;setItem(row, 2, connectedItem);&#10;&#10;        if(!connectedStatus.contains(&quot;No&quot;) &amp;&amp; !isVirtualInterface(interface))&#10;        {&#10;            // Ping the supplied address from MyData&#10;            QString ipAddressToPing = QString::fromStdString(mctData.getRouterIP());&#10;            QProcess pingProcess;&#10;            QString pingCommand;&#10;            QStringList pingArguments;&#10;            bool canPing;&#10;&#10;            #ifdef Q_OS_WIN&#10;            pingCommand = &quot;ping&quot;;&#10;            pingArguments &lt;&lt; &quot;-n&quot; &lt;&lt;  &quot;1&quot; &lt;&lt; ipAddressToPing;&#10;            #else&#10;            pingCommand = &quot;ping&quot;;&#10;            pingArguments &lt;&lt; &quot;-c&quot; &lt;&lt;  &quot;1&quot; &lt;&lt;  ipAddressToPing;&#10;            #endif&#10;&#10;&#10;            //QString pingCommand = &quot;ping -c 1 &quot; + ipAddressToPing;&#10;            pingProcess.start(&quot;ping&quot;, pingArguments);&#10;            pingProcess.waitForFinished();&#10;            QByteArray pingResult = pingProcess.readAll();&#10;            if(pingResult.contains(&quot;Reply from &quot; + ipAddressToPing.toUtf8()) || pingResult.contains(&quot;bytes from &quot; + ipAddressToPing.toUtf8()) )&#10;                canPing = true;&#10;            else&#10;                canPing = false;&#10;            //bool canPing =pingResult.indexOf(ipAddressToPing.toUtf8()) != -1;&#10;            QString pingStatus = canPing ? &quot;Yes&quot; : &quot;No&quot;;&#10;            QTableWidgetItem* pingItem = new QTableWidgetItem(pingStatus);&#10;            tableWidget-&gt;setItem(row, 3, pingItem);&#10;        }&#10;        else&#10;        {&#10;            QString pingStatus = &quot;No&quot;;&#10;            QTableWidgetItem* pingItem = new QTableWidgetItem(pingStatus);&#10;            tableWidget-&gt;setItem(row, 3, pingItem);&#10;        }&#10;    }&#10;&#10;    // Resize the columns to fit the content&#10;    tableWidget-&gt;resizeColumnsToContents();&#10;&#10;&#10;&#10;    // Create a dialog to display the table&#10;    QDialog dialog;&#10;    dialog.resize(450,200);&#10;    QVBoxLayout* layout = new QVBoxLayout;&#10;    layout-&gt;addWidget(tableWidget);&#10;    dialog.setLayout(layout);&#10;    dialog.setWindowTitle(&quot;Network Interfaces&quot;);&#10;&#10;    // Add a selection button&#10;    QDialogButtonBox* buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);&#10;    layout-&gt;addWidget(buttonBox);&#10;&#10;    QObject::connect(buttonBox, &amp;QDialogButtonBox::accepted, &amp;dialog, &amp;QDialog::accept);&#10;    QObject::connect(buttonBox, &amp;QDialogButtonBox::rejected, &amp;dialog, &amp;QDialog::reject);&#10;&#10;    // Execute the dialog&#10;    if (dialog.exec() == QDialog::Accepted) {&#10;        QModelIndexList selectedIndexes = tableWidget-&gt;selectionModel()-&gt;selectedIndexes();&#10;        if (!selectedIndexes.isEmpty()) {&#10;            int selectedRow = selectedIndexes.first().row();&#10;            const QNetworkInterface&amp; selectedInterface = interfaceVector[selectedRow];&#10;            QString selectedName = selectedInterface.name();&#10;            setNetworkInterface(selectedName);&#10;            return selectedName;&#10;        }&#10;    }&#10;&#10;    // Clean up&#10;    delete tableWidget;&#10;&#10;    // Return an empty QString if no interface was selected&#10;    return QString();&#10;}"/>
+        <sourcecode id="uCQiypYpVuCGn" value="bool MainWindow::isVirtualInterface(const QNetworkInterface&amp; interface)&#10;{&#10;#ifdef Q_OS_WIN&#10;    QString interfaceName = interface.name().toLower();&#10;&#10;    // Windows-specific check for virtual interface names&#10;    if (interfaceName.startsWith(&quot;virtual&quot;) ||&#10;        interfaceName.startsWith(&quot;vmware&quot;) ||&#10;        interfaceName.startsWith(&quot;tunnel&quot;) ||&#10;        interfaceName.startsWith(&quot;ppp&quot;) ||&#10;        interfaceName.startsWith(&quot;vmnet&quot;) ||&#10;        interfaceName.startsWith(&quot;ppoe&quot;)) {&#10;        return true;&#10;    }&#10;#elif defined(Q_OS_LINUX)&#10;    QString interfacePath = QString(&quot;/sys/class/net/%1/device/driver&quot;).arg(interface.name());&#10;&#10;    // Linux-specific check for virtual interfaces&#10;    QFileInfo driverInfo(interfacePath);&#10;    if (driverInfo.isSymLink()) {&#10;        QString driverName = driverInfo.symLinkTarget();&#10;        if (driverName.contains(&quot;virtio&quot;) ||&#10;            driverName.contains(&quot;veth&quot;) ||&#10;            driverName.contains(&quot;vbox&quot;) ||&#10;            driverName.contains(&quot;docker&quot;) ||&#10;            driverName.contains(&quot;tun&quot;) ||&#10;            driverName.contains(&quot;vmnet&quot;) ||&#10;            driverName.contains(&quot;tap&quot;)) {&#10;            return true;&#10;        }&#10;    }&#10;#endif&#10;&#10;    return false;&#10;}"/>
+        <sourcecode id="ucfB235T5k8oZ" value="std::string MainWindow::getNetworkInterface()&#10;{&#10;    return networkInterface.toStdString(); //return the network interface as a Standard String&#10;}"/>
+        <sourcecode id="uQWHoD8mrJ8Bi" value="void MainWindow::setNetworkInterface(QString netInterface )&#10;{&#10;    //myData.setNetwork(netInterface);&#10;    mctData.setInterface(netInterface.toStdString());&#10;&#10;}"/>
+        <sourcecode id="u2ZiEbEw7TbZZ" value="void MainWindow::on_Router_Button_clicked()&#10;{&#10;    QString routerFilePath = fileDialog-&gt;getOpenFileName();&#10;    if(!routerFilePath.isEmpty())&#10;    {&#10;&#10;        routerCSV = routerFilePath;&#10;&#10;    }&#10;    //fileDialog = nullptr;&#10;}"/>
+        <sourcecode id="ugj1hPISNJni4" value="void MainWindow::on_Association_Button_clicked()&#10;{&#10;    QString filePath = fileDialog-&gt;getOpenFileName();&#10;    if(!filePath.isEmpty())&#10;    {&#10;        associationCSV = filePath;&#10;&#10;&#10;    }&#10;    //fileDialog = nullptr;&#10;}"/>
+        <sourcecode id="uOFWuLereKCUl" value="void MainWindow::on_Submit_Button_clicked()&#10;{&#10;&#10;&#10;    mctData.setRouterCSVPath(routerCSV.toStdString());&#10;    mctData.setMCTVehicleCSVPath(associationCSV.toStdString());&#10;&#10;&#10;    QApplication::quit();&#10;}"/>
+        <sourcecode id="uDQRdOOErhN3s" value="void MainWindow::on_Network_Button_clicked()&#10;{&#10;&#10;    interfaceVector = QVector&lt;QNetworkInterface&gt;::fromList(QNetworkInterface::allInterfaces()); // get all interfaces and store them in interface vector&#10;    showNetworkInterfaces();&#10;}"/>
+        <sourcecode id="ucggtVWGHfVsL" value="void MainWindow::on_Router_IPEdit_textChanged(const QString &amp;ip)&#10;{&#10;&#10;&#10;&#10;        if(!ip.isEmpty())&#10;        {&#10;            ipaddress = ip;&#10;            mctData.setRouterIP(ipaddress.toStdString());&#10;        }&#10;&#10;}"/>
+        <sourcecode id="uMDLzcicLCUcE" value="void MainWindow::on_Cancel_Button_clicked()&#10;{&#10;    QApplication::exit();&#10;}&#10;"/>
+        <sourcecode id="uk2kUNmcKLS2d" value="void MainWindow::on_View_Routers()&#10;{&#10;&#10;    // Open the file dialog to select the router CSV file&#10;    QString routerCSVPath =&#10;        QFileDialog::getOpenFileName(this, &quot;Open Router CSV&quot;, QString(), &quot;CSV Files (*.csv)&quot;);&#10;    QString vehicleCSVPath =&#10;        QFileDialog::getOpenFileName(this, &quot;Open Vehicle CSV&quot;, QString(), &quot;CSV Files (*.csv)&quot;);&#10;    if (!routerCSVPath.isEmpty())&#10;    {&#10;        // Create and show the RoutersVehiclesDialog with the selected router CSV file&#10;        RoutersVehiclesDialog dialog(routerCSVPath, vehicleCSVPath, this);&#10;        dialog.exec();&#10;    }&#10;}"/>
+        <sourcecode id="uPg2QQAnLAVoF" value="MctVehicleData::MctVehicleData()&#10;{&#10;    autoTimeStamp();&#10;    setRouterIP(&quot;192.168.0.1&quot;);&#10;}"/>
+        <sourcecode id="urT8yiNxNg4Ux" value="/*Create a timestamp */&#10;void MctVehicleData::autoTimeStamp()&#10;{&#10;    //get the current time&#10;    auto currentTime = std::chrono::system_clock::now();&#10;&#10;    //Convert the system time to a time_t value&#10;    std::time_t time = std::chrono::system_clock::to_time_t(currentTime);&#10;&#10;    //convert to a string&#10;    char buffer[80];&#10;    std::strftime(buffer, sizeof(buffer), &quot;%A %c&quot;,std::localtime(&amp;time));&#10;    MctVehicleDataMap[&quot;timeStamp&quot;] = buffer;&#10;}"/>
+        <sourcecode id="uFMiB7OkZBgQL" value="void MctVehicleData::autoUserName()&#10;{&#10;    #ifdef Q_OS_WIN //windows specific code&#10;        #include &lt;windows.h&gt;&#10;        #include &lt;wbemidl.h&gt;&#10;        #pragma comment(lib, &quot;wbemuuid.lib&quot;)&#10;&#10;    HRESULT hr;&#10;&#10;    // Initialize COM&#10;    hr = CoInitializeEx(NULL, COINIT_MULTITHREADED);&#10;    if (FAILED(hr))&#10;    {&#10;        // Handle initialization error&#10;       QMessageBox::critical(nullptr, &quot;Error&quot;, &quot;Unable to initalize COM!&quot;);&#10;        return;&#10;    }&#10;&#10;    // Initialize security&#10;    hr = CoInitializeSecurity(&#10;        NULL,&#10;        -1,&#10;        NULL,&#10;        NULL,&#10;        RPC_C_AUTHN_LEVEL_DEFAULT,&#10;        RPC_C_IMP_LEVEL_IMPERSONATE,&#10;        NULL,&#10;        EOAC_NONE,&#10;        NULL);&#10;    if (FAILED(hr))&#10;    {&#10;        // Handle security initialization error&#10;        CoUninitialize();&#10;       QMessageBox::critical(nullptr, &quot;Error&quot;, &quot;Security initalization Error!&quot;);&#10;        return;&#10;    }&#10;&#10;    IWbemLocator* pLoc = NULL;&#10;    IWbemServices* pSvc = NULL;&#10;    IEnumWbemClassObject* pEnumerator = NULL;&#10;&#10;    // Connect to WMI&#10;    hr = CoCreateInstance(&#10;        CLSID_WbemLocator,&#10;        0,&#10;        CLSCTX_INPROC_SERVER,&#10;        IID_IWbemLocator,&#10;        reinterpret_cast&lt;LPVOID*&gt;(&amp;pLoc));&#10;    if (FAILED(hr))&#10;    {&#10;        // Handle WMI connection error&#10;        CoUninitialize();&#10;        QMessageBox::critical(nullptr, &quot;Error&quot;, &quot;WMI Connection Error!&quot;);&#10;        return;&#10;    }&#10;&#10;    // Connect to the root\cimv2 namespace&#10;    hr = pLoc-&gt;ConnectServer(&#10;        _bstr_t(L&quot;ROOT\\CIMV2&quot;),&#10;        NULL,&#10;        NULL,&#10;        0,&#10;        NULL,&#10;        0,&#10;        0,&#10;        &amp;pSvc);&#10;    if (FAILED(hr))&#10;    {&#10;        // Handle namespace connection error&#10;        pLoc-&gt;Release();&#10;        CoUninitialize();&#10;        QMessageBox::critical(nullptr, &quot;Error&quot;, &quot;Namespace Connection Error!&quot;);&#10;        return;&#10;    }&#10;&#10;    // Set the security level on the proxy&#10;    hr = CoSetProxyBlanket(&#10;        pSvc,&#10;        RPC_C_AUTHN_WINNT,&#10;        RPC_C_AUTHZ_NONE,&#10;        NULL,&#10;        RPC_C_AUTHN_LEVEL_CALL,&#10;        RPC_C_IMP_LEVEL_IMPERSONATE,&#10;        NULL,&#10;        EOAC_NONE);&#10;    if (FAILED(hr))&#10;    {&#10;        // Handle proxy security error&#10;        pSvc-&gt;Release();&#10;        pLoc-&gt;Release();&#10;        CoUninitialize();&#10;        return QString();&#10;    }&#10;&#10;    // Query for the Win32_Process class&#10;    hr = pSvc-&gt;ExecQuery(&#10;        _bstr_t(L&quot;WQL&quot;),&#10;        _bstr_t(L&quot;SELECT * FROM Win32_Process WHERE Name='explorer.exe'&quot;),&#10;        WBEM_FLAG_FORWARD_ONLY | WBEM_FLAG_RETURN_IMMEDIATELY,&#10;        NULL,&#10;        &amp;pEnumerator);&#10;    if (FAILED(hr))&#10;    {&#10;        // Handle query error&#10;        pSvc-&gt;Release();&#10;        pLoc-&gt;Release();&#10;        CoUninitialize();&#10;        QMessageBox::critical(nullptr, &quot;Error&quot;, &quot;Unable to execute Query!&quot;);&#10;        return;&#10;    }&#10;&#10;    IWbemClassObject* pclsObj = NULL;&#10;    ULONG uReturn = 0;&#10;&#10;    // Get the first instance of Win32_Process&#10;    hr = pEnumerator-&gt;Next(WBEM_INFINITE, 1, &amp;pclsObj, &amp;uReturn);&#10;    if (SUCCEEDED(hr) &amp;&amp; uReturn &gt; 0)&#10;    {&#10;        VARIANT var;&#10;        CIMTYPE type;&#10;&#10;        // Get the owner property of the process&#10;        hr = pclsObj-&gt;Get(L&quot;GetOwner&quot;, 0, &amp;var, &amp;type, NULL);&#10;        if (SUCCEEDED(hr))&#10;        {&#10;            // Extract the username&#10;            QString userName = QString::fromWCharArray(var.bstrVal);&#10;&#10;            // Cleanup&#10;            VariantClear(&amp;var);&#10;            pclsObj-&gt;Release();&#10;            pEnumerator-&gt;Release();&#10;            pSvc-&gt;Release();&#10;            pLoc-&gt;Release();&#10;            CoUninitialize();&#10;&#10;            MctVehicleDataMap[&quot;user_name &quot;] =  userName;&#10;        }&#10;    }&#10;&#10;    // Cleanup in case of failure&#10;    pEnumerator-&gt;Release();&#10;    pSvc-&gt;Release();&#10;    pLoc-&gt;Release();&#10;    CoUninitialize();&#10;&#10;      MctVehicleDataMap[&quot;user_name &quot;] =  QString(); // Return empty string if user name is not found&#10;&#10;&#10;    #elif defined(Q_OS_LINUX)&#10;    /*char* loginName = std::getenv(&quot;LOGNAME&quot;);&#10;    if (loginName)&#10;    {&#10;        MctVehicleDataMap[&quot;user_name &quot;] = QString::fromUtf8(loginName).toStdString();&#10;    }*/&#10;    QString homePath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);&#10;    QString userName = homePath.section(QDir::separator(), -1);&#10;&#10;    setUserName(userName.toStdString());&#10;    #endif&#10;&#10;&#10;}"/>
+        <sourcecode id="ukoxMQ8q6wUZw" value="void MctVehicleData::autoComputerIP()&#10;{&#10;  //Get the ip address from the selected network interface&#10;    QNetworkInterface networkInterface = QNetworkInterface::interfaceFromName(QString::fromStdString(getInterface()));&#10;    if (networkInterface.isValid()) { // if the networkInterface is valid&#10;        QList&lt;QNetworkAddressEntry&gt; addressEntries = networkInterface.addressEntries(); // get the networkInterfacee address entries and add it to a QList&#10;        for (const QNetworkAddressEntry&amp; entry : addressEntries) {   // go through the list&#10;            if (entry.ip().protocol() == QAbstractSocket::IPv4Protocol) {  //make sure that the ip protocol is ipv4&#10;                setComputerIP( entry.ip().toString().toStdString()); // assign the ip to the MctVehicleDataMap&#10;                return; // Stop after finding the first IPv4 address&#10;            }&#10;        }&#10;    }&#10;    // Handle the case when the network interface is not found or has no IPv4 address&#10;    else&#10;    {&#10;        setComputerIP( &quot;Invalid Computer IP&quot;);&#10;    }&#10;}"/>
+        <sourcecode id="usoZplxrO80iC" value="try {&#10;        // Run the 'arp' command to get the MAC address of the router&#10;        QString routerIP = QString::fromStdString(getRouterIP()); // Replace with the appropriate method to get the router IP address&#10;        QString arpCommand = &quot;arp -n &quot; + routerIP;&#10;        QProcess arpProcess;&#10;        arpProcess.start(arpCommand);&#10;        arpProcess.waitForFinished();&#10;&#10;        // Read the output of the 'arp' command&#10;        QByteArray arpResult = arpProcess.readAll();&#10;        QString arpOutput = QString::fromLocal8Bit(arpResult);&#10;&#10;        // Parse the output to extract the MAC address&#10;        QStringList arpLines = arpOutput.split('\n');&#10;        QString routerMAC;&#10;        for (const QString&amp; line : arpLines) {&#10;            QStringList columns = line.trimmed().split(QRegularExpression(&quot;\\s+&quot;));&#10;            if (columns.size() &gt;= 3 &amp;&amp; columns[0] == routerIP) {&#10;                routerMAC = columns[2];&#10;                break;&#10;            }&#10;        }&#10;&#10;        // Update the router MAC address in your data structure&#10;        MctVehicleDataMap[&quot;router_mac&quot;] = routerMAC.toStdString();&#10;    } catch (const std::exception&amp; e) {&#10;        // Exception handling for std::exception or its derived types&#10;        qDebug() &lt;&lt; &quot;Exception occurred: &quot; &lt;&lt; e.what();&#10;        // Handle the exception appropriately&#10;    } catch (...) {&#10;        // Catch-all for any other exceptions&#10;        qDebug() &lt;&lt; &quot;Unknown exception occurred&quot;;&#10;        // Handle the exception appropriately&#10;    }"/>
+        <sourcecode id="uL0AYfGerDMnt" value="void MctVehicleData::autoComputerMacAddress()&#10;{&#10;    QNetworkInterface interfaces = QNetworkInterface::interfaceFromName(QString::fromStdString(getInterface())); // get the all interfaces and place it in interfaces&#10;&#10;        if(interfaces.isValid() &amp;&amp; !interfaces.hardwareAddress().isEmpty()) // if the interface is valid and the hardwareaddress of that address is not empty&#10;        {&#10;            setComputerMacAddress( interfaces.hardwareAddress().toStdString()) ; //assign it to the datamap&#10;        }&#10;&#10;}"/>
+        <sourcecode id="uDADHRfTN8WgG" value="void MctVehicleData::autoComputerName()&#10;{&#10;        setComputerName( QSysInfo::machineHostName().toStdString() ); //get the machine host name and assign it to the datamap&#10;}"/>
+        <sourcecode id="usk26hpOpMrTK" value="void MctVehicleData::setUserName(std::string uname)&#10;{&#10;    //set the Datamap key user_name&#10;    MctVehicleDataMap[&quot;user_name&quot;] = uname;&#10;}"/>
+        <sourcecode id="uzLvF5FuZc4vL" value="void MctVehicleData::setComputerName(std::string compName)&#10;{&#10;    MctVehicleDataMap[&quot;computer_name&quot;] = compName;&#10;}"/>
+        <sourcecode id="ut1hL0Krzsvc7" value="void MctVehicleData::setComputerMacAddress(std::string computerMac)&#10;{&#10;    MctVehicleDataMap[&quot;computer_mac&quot;] = computerMac;&#10;}"/>
+        <sourcecode id="u9ZRBmVD9c7SS" value="void MctVehicleData::setRouterName(std::string routerName)&#10;{&#10;    MctVehicleDataMap[&quot;router_name&quot;] = routerName;&#10;}"/>
+        <sourcecode id="uJDwLXHpb6dQx" value="void MctVehicleData::setRouterMac(std::string routerMac)&#10;{&#10;    MctVehicleDataMap[&quot;router_mac&quot;] = routerMac;&#10;}"/>
+        <sourcecode id="u37Hth1YWexWp" value="void MctVehicleData::setRouterIP(std::string routerIP)&#10;{&#10;     MctVehicleDataMap[&quot;router_ip&quot;] = routerIP;&#10;}"/>
+        <sourcecode id="ubam1tjWJ7UFm" value="void MctVehicleData::setRouterSerial(std::string routerSerial)&#10;{&#10;     MctVehicleDataMap[&quot;router_serial&quot;] = routerSerial;&#10;}"/>
+        <sourcecode id="uzYyGKQ6zTxqy" value="void MctVehicleData::setRouterState(std::string routerState)&#10;{&#10;     MctVehicleDataMap[&quot;router_state&quot;] = routerState;&#10;}"/>
+        <sourcecode id="uw87nEevO70Je" value="void MctVehicleData::setRouterCSVPath(std::string routerCSVPath)&#10;{&#10;     MctVehicleDataMap[&quot;router_cvs_path&quot;] = routerCSVPath;&#10;}"/>
+        <sourcecode id="ujOtS8E0rAF7g" value="void MctVehicleData::setMCTVehicleCSVPath(std::string mctVehiclePath)&#10;{&#10;     MctVehicleDataMap[&quot;association_cvs_path&quot;] = mctVehiclePath;&#10;}"/>
+        <sourcecode id="uJzcwBSS9z1gV" value="void MctVehicleData::setInterface(std::string interface)&#10;{&#10;     MctVehicleDataMap[&quot;computer_interface&quot;] = interface;&#10;&#10;}"/>
+        <sourcecode id="uZaJy5Gg6QfVA" value="std::string MctVehicleData::getTimeStamp()&#10;{&#10;     return MctVehicleDataMap[&quot;timeStamp&quot;];&#10;}"/>
+        <sourcecode id="u1IihrOGz7rs7" value="std::string MctVehicleData::getComputerName()&#10;{&#10;     return MctVehicleDataMap[&quot;computer_name&quot;];&#10;}"/>
+        <sourcecode id="uhkNQwWr4CnKO" value="std::string MctVehicleData::getUserName()&#10;{&#10;     return MctVehicleDataMap[&quot;user_name&quot;];&#10;}"/>
+        <sourcecode id="uTE1fav7i0rok" value="std::string MctVehicleData::getComputerMacAddress()&#10;{&#10;     return MctVehicleDataMap[&quot;computer_mac&quot;];&#10;}"/>
+        <sourcecode id="uOOs2aywkmgBe" value="std::string MctVehicleData::getComputerIP()&#10;{&#10;     return MctVehicleDataMap[&quot;computer_ip&quot;];&#10;}"/>
+        <sourcecode id="uxddcfLCuE7Gw" value="std::string MctVehicleData::getRouterName()&#10;{&#10;     return MctVehicleDataMap[&quot;router_name&quot;];&#10;}"/>
+        <sourcecode id="uWlyaDFLTRBGh" value="std::string MctVehicleData::getRouterMac()&#10;{&#10;     return MctVehicleDataMap[&quot;router_mac&quot;];&#10;}"/>
+        <sourcecode id="uVGdgbX9CHwxR" value="std::string MctVehicleData::getRouterIP()&#10;{&#10;     return MctVehicleDataMap[&quot;router_ip&quot;];&#10;}"/>
+        <sourcecode id="uZ1EALyJIaiGw" value="std::string MctVehicleData::getRouterSerial()&#10;{&#10;     return MctVehicleDataMap[&quot;router_serial&quot;];&#10;}"/>
+        <sourcecode id="u4CPpnhMTrHq2" value="std::string MctVehicleData::getRouterState()&#10;{&#10;     return MctVehicleDataMap[&quot;router_state&quot;];&#10;}"/>
+        <sourcecode id="uNb0IF4XSYbCg" value="std::string MctVehicleData::getRouterCSVPath()&#10;{&#10;     return MctVehicleDataMap[&quot;router_cvs_path&quot;];&#10;}"/>
+        <sourcecode id="uwZwt05lLXyI4" value="std::string MctVehicleData::getMCTVehicleCSVPath()&#10;{&#10;     return MctVehicleDataMap[&quot;association_cvs_path&quot;];&#10;}"/>
+        <sourcecode id="uV4Mr7hlACSBs" value="std::string MctVehicleData::getInterface()&#10;{&#10;     return MctVehicleDataMap[&quot;computer_interface&quot;];&#10;}"/>
+        <sourcecode id="uxWoOWqJdlPW2" value="void MctVehicleData::writeConfigXMLFile()&#10;{&#10;     #ifdef Q_OS_WIN&#10;&#10;     QString configDir =&quot;C:\TEMP\COMPDIR\MCTAware&quot;; //The directory that store the config file&#10;     QDir directoryWin(configDir)&#10;     if(!directory.exists())  //check if the directory exist&#10;     {&#10;         directory.mkpath(configDir); // if it does not exist we create it&#10;     }&#10;     else&#10;    {&#10;         QMessageBox::critical(this, &quot;Error&quot;, &quot;Unable create config file!&quot;); // if we cannot create it we give a error&#10;    }&#10;    #elif defined(Q_OS_LINUX)&#10;&#10;    QString configDirLinux = &quot;/home/jyeager/Temp/MctAware/&quot;;&#10;     QDir directory(configDirLinux);&#10;     if(!directory.exists()) //check if the directory exist&#10;             {&#10;                 directory.mkpath(configDirLinux); // if it does not exist we create it&#10;             }&#10;             else&#10;             {&#10;                 QString linuxFilePath = &quot;/home/jyeager/Temp/MctAware/.config.xml&quot;;&#10;                 QFile file(linuxFilePath);&#10;                 if(!file.exists())&#10;                 {&#10;                     if(!file.open(QIODevice::WriteOnly | QIODevice::Text))&#10;                     {&#10;                         QMessageBox::critical(nullptr, &quot;Error&quot;, &quot;Unable create config file!&quot;);&#10;                     }&#10;&#10;                     QXmlStreamWriter xmlWriter(&amp;file);&#10;                     xmlWriter.setAutoFormatting(true); // make it human readable&#10;&#10;                     //Write the XML start document&#10;                     xmlWriter.writeStartDocument();&#10;&#10;                     //Write the root element&#10;                     xmlWriter.writeStartElement(&quot;configuration&quot;);&#10;&#10;                     //write the routers ip address&#10;                     xmlWriter.writeStartElement(&quot;router_ip&quot;);&#10;                     xmlWriter.writeCharacters(QString::fromStdString(getRouterIP()));&#10;                     xmlWriter.writeEndElement();&#10;&#10;                     //write the router cvs location&#10;                     xmlWriter.writeStartElement(&quot;router_csv_location&quot;);&#10;                     xmlWriter.writeCharacters(QString::fromStdString(getRouterCSVPath()));&#10;                     xmlWriter.writeEndElement();&#10;&#10;                     //Write network interface&#10;                     xmlWriter.writeStartElement(&quot;network_interface&quot;);&#10;                     xmlWriter.writeCharacters(QString::fromStdString(getInterface()));&#10;                     xmlWriter.writeEndElement();&#10;&#10;                     //Write vehicle CSV Location&#10;                     xmlWriter.writeStartElement(&quot;vehicle_csv_location&quot;);&#10;                     xmlWriter.writeCharacters(QString::fromStdString(getMCTVehicleCSVPath()));&#10;                     xmlWriter.writeEndElement();&#10;&#10;                     //Write the root elements end&#10;                     xmlWriter.writeEndElement();&#10;&#10;                     //Write the XML document's end&#10;                     xmlWriter.writeEndDocument();&#10;&#10;                     //close the file&#10;                         file.close();&#10;                 }&#10;&#10;             }&#10;    #endif&#10;&#10;}"/>
+        <sourcecode id="unCLndd1PhFK8" value="CsvFileHandler::CsvFileHander( const vector&lt;std::string&gt; &amp; paths )&#10;{&#10;&#9;filePath = paths;&#10;&#10;&#10;}"/>
+        <sourcecode id="unq36HD1pn82o" value="void readCSVFile()&#10;{&#10;      for( int filePaths : filePath)&#10;{&#10;&#9;std::ifstream file( filePaths) // get a file from the filePaths vector&#10;&#9;if(!file) // test if the file exist in the path&#10;&#9;{&#10;&#9;    //if the file does not exisit the have the user select the file with a QFileDialog&#10;&#9;    file =&#10;    &#9;    QFileDialog::getOpenFileName(this, &quot;Select the  CSV&quot;, QString(), &quot;CSV Files (*.csv)&quot;).toStdString();&#10;&#9;}&#10;&#10;&#9;std::string line;&#10;&#9;unsigned int currentRow = 0;&#10;&#9;while(std::getline(file,line))&#10;&#9;{&#10;&#9;      std::vector&lt;std::string&gt; rowData = splitString(line, ',');&#10;&#9;      std::cout &lt;&lt; currentRow++ &lt;&lt; &quot;: &quot;; &#10;&#9;     for(const std::string &amp; cell : rowData)&#10;&#9;    {&#10;&#9;          std::cout &lt;&lt;std::left &lt;&lt;std::setw(17) &lt;&lt; cell &lt;&lt; &quot; &quot;; //going to change this so it opens inside a QDialog&#10;&#9;    }//end for&#10;&#9;         std::cout &lt;&lt; std::endl;&#10;&#9;    }&#10;&#9;  file.close();&#10;}&#10;}"/>
+        <sourcecode id="ubOC1OxD4tNa3" value="void writeToCSVFile(const QStringList&amp; headers, const QVector&lt;QStringList&gt;&amp; data)&#10;{&#10;    QFile file(&quot;output.csv&quot;);&#10;    if (file.open(QIODevice::WriteOnly | QIODevice::Text))&#10;    {&#10;        QTextStream out(&amp;file);&#10;&#10;        // Write header row&#10;        out &lt;&lt; headers.join(&quot;,&quot;) &lt;&lt; endl;&#10;&#10;        // Write data rows&#10;        for (const QStringList&amp; rowData : data)&#10;        {&#10;            out &lt;&lt; rowData.join(&quot;,&quot;) &lt;&lt; endl;&#10;        }&#10;&#10;        // Close the file when done writing&#10;        file.close();&#10;    }&#10;    else&#10;    {&#10;        // Handle error if file cannot be opened&#10;        // For example, show an error message box&#10;        qWarning() &lt;&lt; &quot;Unable to open CSV file for writing!&quot;;&#10;    }&#10;}"/>
+        <sourcecode id="umQjLTLWrkR9u" value="void appendToCSVFile(const QVector&lt;QStringList&gt;&amp; data)&#10;{&#10;    QFile file(&quot;output.csv&quot;);&#10;    if (file.open(QIODevice::Append | QIODevice::Text))&#10;    {&#10;        QTextStream out(&amp;file);&#10;&#10;        // Write data rows&#10;        for (const QStringList&amp; rowData : data)&#10;        {&#10;            out &lt;&lt; rowData.join(&quot;,&quot;) &lt;&lt; endl;&#10;        }&#10;&#10;        // Close the file when done writing&#10;        file.close();&#10;    }&#10;    else&#10;    {&#10;        // Handle error if file cannot be opened&#10;        // For example, show an error message box&#10;        qWarning() &lt;&lt; &quot;Unable to open CSV file for appending!&quot;;&#10;    }&#10;}"/>
+        <sourcecode id="uLRqG3TgriAC5" value="XmlFileHander::XmlFileHander()&#10;{&#10;    xmlFileDialog = new  QFileDialog();&#10;    directory.setPath( QDir::homePath()); //sets the default directory&#10;    xmlFile.setFileName(QString::Null() ); //set this to null for now&#10;&#10;}"/>
+        <sourcecode id="uSbwqcobYsiak" value="void XmlFileHander::setDirectory(QDir dir)&#10;{&#10;    this-&gt;directory = dir; //set a path to the directory&#10;}"/>
+        <sourcecode id="usMnZoc1RycqE" value="void XmlFileHander::setXmlFile(QString xmlFileValue)&#10;{&#10;    QFile fileName(xmlFileValue); // convert to a file&#10;    if(!fileName.open(QIODevice::ReadOnly | QIODevice::Text)) //check if we can open it and read it&#10;    {&#10;        QMessageBox::critical(nullptr,&quot;ERROR&quot;,&quot;Could Not Open XML File&quot;,QMessageBox::Ok); // if not give this error&#10;        QString file =&#10;            QFileDialog::getOpenFileName(nullptr, &quot;Open config xml &quot;, QString(), &quot;XML Files (*.xml)&quot;); //open a dialog box so person can find it&#10;        this-&gt;setXmlFile(file); // set the file name&#10;    }&#10;    else&#10;    {&#10;        xmlFile = xmlFileValue;&#10;    }&#10;}"/>
+        <sourcecode id="u2PMOnmfa23lD" value="std::string XmlFileHander::getDirectory()&#10;{&#10;    return this-&gt;directory.absolutePath().toStdString();&#10;}"/>
+        <sourcecode id="u2eW8PCRnAkg7" value="std::vector&lt;std::string&gt; XmlFileHander::getTagNames()&#10;{&#10;    std::vector&lt;std::string&gt; tags;&#10;    for (const QString&amp; tagName : tagNames)&#10;    {&#10;        tags.push_back(tagName.toStdString());&#10;    }&#10;&#10;    return tags;&#10;}"/>
+        <sourcecode id="uTx6Ewxz9pB5W" value="std::string XmlFileHander::getXmlFile()&#10;{&#10;    return this-&gt;xmlFile.toStdString();&#10;}&#10;"/>
+      </codegenerator>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
