@@ -13,15 +13,13 @@ MainWindow::MainWindow(QWidget *parent)
 
     QFile file("mainwindow.ui");
     file.open(QFile::ReadOnly);
- //   routerDialog = new RoutersVehiclesDialog("/home/jyeager/Downloads/routers.csv", "", this);
     QAction* actionView_Routers = new QAction("View Routers", this);
     connect(actionView_Routers, &QAction::triggered, this, &MainWindow::on_View_Routers);
 
     fileDialog = new QFileDialog(this);
     myNet = std::make_unique<NetworkInformation>();
     mctData = std::make_unique<MctVehicleData>();
- //   routerDialog = new RoutersVehiclesDialog();
-    // Add the "View Routers" action to the File menu
+    routerPtr = std::make_unique<CradlePointRouter>();
     ui->menuFile->addAction(actionView_Routers);
 
 
@@ -109,6 +107,7 @@ void MainWindow::on_Router_Button_clicked()
     {
 
         routerCSV = routerFilePath;
+        routerPtr->setCradlePointCSV(routerFilePath);
 
     }
     //fileDialog = nullptr;

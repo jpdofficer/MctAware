@@ -7,6 +7,7 @@
 #include<QProcess>
 #include<QDebug>
 #include<QFileInfo>
+#include<QRegularExpression>
 
 
 #ifdef Q_OS_Windows
@@ -25,6 +26,7 @@ public:
     QVector<QNetworkInterface>getInterfaceVector();
     QMap<QString,QString> getAddressEntry();
     std::vector<QNetworkInterface> getInterfaceVectorStd();
+    std::string arpMacAddress(std::string ipString); // returns the mac address of the interface
     bool pingIPAddress(const QString & ipAddress);
     bool isVirtualInterface(QNetworkInterface const &);
 

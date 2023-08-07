@@ -15,6 +15,8 @@
 #include<QOperatingSystemVersion>
 #include<QXmlStreamWriter>
 #include<QMessageBox>
+#include<memory.h>
+#include "networkinformation.h"
 
 
 #define MAX_SIZE 13
@@ -23,6 +25,7 @@ class MctVehicleData
 {
     private:
     std::map<std::string, std::string>MctVehicleDataMap;
+    std::unique_ptr<NetworkInformation> myNet;
 
     public:
         MctVehicleData();

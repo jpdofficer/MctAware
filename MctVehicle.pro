@@ -20,7 +20,6 @@ SOURCES += \
     networkinformation.cpp
 
 HEADERS += \
-    CradlePointRouters.h \
     MctVehicleData.h \
     RoutersVehiclesDialog.h \
     cradlepointrouter.h \

@@ -146,3 +146,46 @@ bool NetworkInformation::isVirtualInterface(const QNetworkInterface& interface)
     }
 
 
+    std::string NetworkInformation::arpMacAddress( std::string ipString)
+    {
+
+        try {
+            // Run the 'arp' command to get the MAC address of the router
+            QString routerIP = QString::fromStdString(ipString); // Replace with the appropriate method to get the router IP address
+
+            QProcess arpProcess;
+            arpProcess.start("arp", QStringList() << "-n" << routerIP);
+            arpProcess.waitForFinished();
+
+            // Read the output of the 'arp' command
+            QByteArray arpResult = arpProcess.readAll();
+            QString arpOutput = QString::fromLocal8Bit(arpResult);
+
+            // Parse the output to extract the MAC address
+            QStringList arpLines = arpOutput.split('\n');
+            QRegularExpression regex("\\s+");
+            QString routerMAC;
+            for (const QString& line : arpLines) {
+                QStringList columns = line.trimmed().split(regex);
+                if (columns.size() >= 3 && columns[0] == routerIP) {
+                    routerMAC = columns[2];
+                    break;
+                }
+            }
+
+            // Update the router MAC address in your data structure
+            // MctVehicleDataMap["router_mac"] = routerMAC.toStdString();
+            return routerMAC.toStdString();
+        } catch (const std::exception& e) {
+            // Exception handling for std::exception or its derived types
+            qDebug() << "Exception occurred: " << e.what();
+            // Handle the exception appropriately
+        } catch (...) {
+            // Catch-all for any other exceptions
+            qDebug() << "Unknown exception occurred";
+            // Handle the exception appropriately
+        }
+
+    }
+
+

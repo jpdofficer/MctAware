@@ -21,7 +21,7 @@
 #include "MctVehicleData.h"
 #include "RoutersVehiclesDialog.h"
 #include "networkinformation.h"
-
+#include "cradlepointrouter.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -70,6 +70,7 @@ private:
     RoutersVehiclesDialog routerDialog;
     std::unique_ptr<NetworkInformation> myNet;
     std::unique_ptr<MctVehicleData>  mctData;
+    std::unique_ptr<CradlePointRouter> routerPtr;
     QFileDialog *fileDialog; //creates a file dialog so that the user can select the correct files
 
 };

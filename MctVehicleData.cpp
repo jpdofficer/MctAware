@@ -7,6 +7,7 @@ MctVehicleData::MctVehicleData()
 
     //initalize the Map
     MctVehicleDataMap = std::map<std::string, std::string>();
+    myNet = std::make_unique<NetworkInformation>();
 }
 
 
@@ -76,40 +77,7 @@ void MctVehicleData::autoComputerIP()
 }
 //void MctVehicleData::autoRouterIP(const std::string routerIP) {}
 void MctVehicleData::autoRouterMac() {
-    try {
-        // Run the 'arp' command to get the MAC address of the router
-        QString routerIP = QString::fromStdString(getRouterIP()); // Replace with the appropriate method to get the router IP address
-    //    QString arpCommand = "arp -n " + routerIP;
-        QProcess arpProcess;
-        arpProcess.start("arp", QStringList() << "-n" << routerIP);
-        arpProcess.waitForFinished();
-
-        // Read the output of the 'arp' command
-        QByteArray arpResult = arpProcess.readAll();
-        QString arpOutput = QString::fromLocal8Bit(arpResult);
-
-        // Parse the output to extract the MAC address
-        QStringList arpLines = arpOutput.split('\n');
-        QString routerMAC;
-        for (const QString& line : arpLines) {
-            QStringList columns = line.trimmed().split(QRegularExpression("\\s+"));
-            if (columns.size() >= 3 && columns[0] == routerIP) {
-                routerMAC = columns[2];
-                break;
-            }
-        }
-
-        // Update the router MAC address in your data structure
-        MctVehicleDataMap["router_mac"] = routerMAC.toStdString();
-    } catch (const std::exception& e) {
-        // Exception handling for std::exception or its derived types
-        qDebug() << "Exception occurred: " << e.what();
-        // Handle the exception appropriately
-    } catch (...) {
-        // Catch-all for any other exceptions
-        qDebug() << "Unknown exception occurred";
-        // Handle the exception appropriately
-    }
+    setRouterMac(myNet->arpMacAddress(this->getRouterIP()));
 }
 
 
@@ -158,7 +126,7 @@ void MctVehicleData::setRouterMac(std::string routerMac)
     if(routerMacString.startsWith("2A"))
     {
             routerMacString.replace(0,2, "00");
-       MctVehicleDataMap["router_mac"] = routerMacString;
+       MctVehicleDataMap["router_mac"] = routerMacString.toStdString();
     }
     else
     {
