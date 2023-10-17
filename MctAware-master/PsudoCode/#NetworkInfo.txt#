@@ -1,0 +1,6 @@
+NetworkInformation
+A C++ class that gets all the systems network interfaces and information
+
+Get All network interfaces
+place them in a QNetworkInterface vector
+sort them based off user selection and also if connected and can pin the ip address

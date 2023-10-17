@@ -1,0 +1,73 @@
+Check if the C:\Temp\CompFolder\MctAware\.config.xml exisit
+
+ configFileWindow = "C:\Temp\CompFolder\MctAware\.config.xml"
+ configFileLinux = "/opt/MctAware/.config.xml"
+
+def createDir(QString &Path)
+{
+ 
+ if(!QDir::exists(Path))
+	    if(QDir::mkpath(Path))
+	    {
+
+		qDebug() << "Directory Created";
+		
+	    }
+	    else
+	    {
+
+		QMessage 
+        QMessageBox::critical(nullptr, "ERROR", "Could Not Parse create directoru", QMessageBox::Ok);
+	    }
+
+       
+
+
+}
+def createFile( QString &file)
+{
+
+   if(!QFile::exist(file) )
+	    if( QFile::open(QIODeviceBase::WriteOnly))
+	    {
+
+		qDebug() << " File Created"
+	    }
+	    else
+	    {
+	        QMessageBox::critical(nullptr, "ERROR", "Could Not rse XML File", QMessageBox::Ok);
+   	    }
+
+}
+
+
+
+def NoNameYet()
+{
+
+  if( QSysInfo::productType() == "windows")
+  {
+        createDir(configWIndows)
+	createFIle(.config.xml)
+
+
+  }
+  else
+  if(Q_OS_LINUX)
+  {
+
+	createDir(configLinux)
+	createFile(.config.xml)
+	
+
+  }
+
+
+}
+
+
+
+def createXML( QVector <QString> Tag , QVector<QString> Values )
+Ok so what we have to do here is create a tag
+  get all the elements for that tag
+get the end tag
